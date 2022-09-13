@@ -1,0 +1,234 @@
+So what is a unit test?
+
+You need test is a very small, self-contained method that you write to test some part of your code.
+
+Let's say you have a method in your Java class that needs to be tested to make sure that this method
+
+works as expected.
+
+You will need to write one or more unit tests.
+
+Each unit test is a very small Java method that you create.
+
+It is a small piece of code that you write to invoke the method that you are testing in this particular
+
+example and test any method that is called is email wallet.
+
+So the unit method that they will create will invoke the is email valid method and it will validate
+
+that it has produced an expected result.
+
+To test application code, we usually write more than one unit test.
+
+One unit test will test your method with valid parameters, while another unit test will intentionally
+
+provide a method with invalid parameter values.
+
+And in both scenarios, your unit test methods will only date if the method you are testing produces
+
+expected result.
+
+Now the code and unit test the is very simple and is usually very short.
+
+And this is why on my slide on the right side I have illustrated each unit test has a much smaller element,
+
+then a method it is testing on the left side.
+
+The method on the left side may contain a very complex business logic.
+
+And this is why on my screen this element is represented as a very large element.
+
+So a unique test is also a code that you write, but it is very small and is very simple.
+
+Code that does not contain much of a business logic is very simple code because all it does is it calls
+
+your method and the test with specific input parameters and validates the returns result.
+
+And it is very important to keep in mind that unit test should be testing one particular functionality
+
+only.
+
+We should not try to make one single unit test method that tests multiple methods of your class at the
+
+same time.
+
+So to write unit tests we will use G unit.
+
+G unit provides us with an API to write small code snippets to test our Java methods.
+
+Now your job application will contain many classes, and each class may contain several methods to ensure
+
+that your application is well tested.
+
+You will want to write more than one unique test for most of the methods in your class.
+
+When you are on unit test and it successfully passes, it will be marked with green color.
+
+But if unit does not receive an expected result and it fails, then it will be marked with a red color.
+
+This is why on my slide I have some unique tests color in green color and some unique tests that have
+
+failed color with the red color.
+
+Now let's zoom in and have a look at an example of one single unit test.
+
+Now let's start with a very simple code example first, and then as we become more comfortable with
+
+unit testing, we will look at more complex code examples.
+
+Let's assume that we have a German class that is called calculator, and it has a very simple method
+
+that is called integer division.
+
+It has a very simple business logic, and all we do here is we perform math division and we do white
+
+one number but another.
+
+But even though it is a very simple code example, this method can still be tested.
+
+For example, what if a developer made a typo and instead of division performed multiplication or addition?
+
+So we can write the unit test to make sure that this code works correctly.
+
+And to test this method we can write unit test that will look something like this.
+
+Now we will talk about test methods, structure, and all those details in full in video lessons.
+
+So please do not worry if it looks a little bit strange or confusing to you.
+
+For example, you might have noticed that the method name looks very unusual.
+
+It is very long and it has test notation.
+
+But don't worry, we will talk about it in the following video lessons.
+
+Now, this method is also divided into three main sections.
+
+The first one is called Arrange.
+
+In this section, I create a new instance of calculator class.
+
+The second section is called Act and in this section I actually invoke the integer division method and
+
+provided with two valid parameters.
+
+Now the image of division method is the method that I'm testing.
+
+It is called method and the test.
+
+And I want to make sure that this method works as expected and it performs integer division correctly.
+
+So I give it to parameters and I copied the return value into a new variable that is called result.
+
+The third section is called Assert and this is a section where I use special duty methods to verify
+
+that the result is correct.
+
+Four divided by two should produce two.
+
+So I use a special g unit method that is called assert equals to verify that this result is correct.
+
+The first parameter that it accepts is an expected value.
+
+I'm expecting the result to be equal to two.
+
+The second parameter is an actual value that was returned from integer division method.
+
+And the third parameter is an optional hint error message that will be printed in the console.
+
+If this test method fails.
+
+All right.
+
+So if four divided by two does not produce two.
+
+Then this unit test will fail.
+
+And the message four divided by two should have returned.
+
+Two will be printed in the console.
+
+Now, don't worry if it is still a little bit confusing at this moment.
+
+In the following lecture, school actually write this unit test in our development environment and we
+
+will run it and we'll actually see how it all works.
+
+If I run unit test in my Java development environment, for example.
+
+A And if this unit test passes, then I will see a green mark on its left side.
+
+But if my integer division meant it did not return expected result and my unit test fails, then I will
+
+see a red mark on its left side and there will be also more information printed in the console and also
+
+in the test result panel.
+
+Now different development environments will have different user interface for this report, but the
+
+successful unit test will always be green and the failed unit test will always be a red.
+
+So unit testing is a process where developers write and then a run very simple test methods that test
+
+individual parts of our application.
+
+You need.
+
+Tests are very small and they run very fast.
+
+They run very fast because when testing them entered, any dependencies that this method might have
+
+are replaced with more.
+
+For example, if the method I'm testing sends a ship request and depends on a ship client object, a
+
+real client object will need to be replaced with a thik or mock version of it, and there can be different
+
+kinds of these fake objects that can be a fake object, that can be mock object, or they can be a spy
+
+object.
+
+And we will talk more about these different kinds of fake objects later in this video course.
+
+So really, your client object will be replaced with a mock version of it and no relationship request
+
+will be sent.
+
+And this will make our unique test method run much faster.
+
+And we do it because you need test.
+
+Method is not actually testing how it should be cleaned works.
+
+You need test is focused only on tests in java code inside of the method that you are testing.
+
+If the method you are testing depends on another object, then dependency will need to be placed with
+
+more compute.
+
+And when all external dependencies are replaced with mock object, with predefined behavior or with
+
+hardcoded values, then the method we are testing will work very fast and our unit test will also work
+
+very fast.
+
+And this is why, if needed, I can write more than one unit test to test a single method.
+
+For example, one unit test will be to test method with valid input parameter values.
+
+Another unit test will be to test method with invalid input parameter values.
+
+And another unit test can be to test methods with invalid response from a Should you be clean?
+
+You can write different unit tests to make sure that the method you are testing works well and reliable
+
+under different conditions and always produces expected result.
+
+Unit Testing & Integration Testing of Java and Spring Boot applications.
+Note : 4,8 sur 1
+4,8
+26 notes
+273
+Participants
+6,5 heures
+Total 

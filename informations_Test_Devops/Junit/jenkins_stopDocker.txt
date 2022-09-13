@@ -1,0 +1,17 @@
+In our course, we've been using Docker to run Jenkins', not stop it.
+
+If you have your terminal open, we can press control, see, and that will kill it, frankly.
+
+And we can also run Docker container.
+
+Alice.
+
+And now we can see it's no longer running.
+
+So one thing we have is a darker volume.
+
+Now, optionally, you may want to delete this if you want to get rid of any trace of Jenkins, but
+
+if you still want to keep your jobs we've used and what's considered expanding on your jenkins' knowledge
+
+and keep what you've already created, then don't delete the volume.

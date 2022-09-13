@@ -1,0 +1,48 @@
+In previous lesson, we have tested the integer division method and to do that we first invoked this
+
+method and then to verify if this method works well and if it returns correct result we have used assert
+
+equals assertion.
+
+Now assertions is actually what we use to verify.
+
+If the method under test that we are testing works well and returns correct result.
+
+Each assertion is a small utility method that makes a decision whether this unit test should pass or
+
+fail.
+
+And it makes a decision by evaluating condition with a given input parameters.
+
+If condition is not true, then assertion fails and it throws an exception with a message.
+
+And to customize the error message a little bit, we can include our own custom error message into assertion.
+
+So one additional parameter and that assertion checks it is a message.
+
+And this message parameter is optional and you do not need to provide any message here.
+
+But it is considered a good practice to always provide a good and descriptive message for each assertion.
+
+This message will then be printed in the report, but only if this assertion fails the test method.
+
+If this method passes, then of course there will be no message printed.
+
+But if it fails, then you can use this additional message to include possible explanation.
+
+For example, we could say here that integer division did not produce expected result.
+
+Or be even more specific and say something like this.
+
+Four divided by two did not produce two, and in this case, one test report is reviewed by another
+
+developer on YouTube team.
+
+They will have more information to understand why this particular assertion has failed the test.
+
+Unit Testing & Integration Testing of Java and Spring Boot applications.
+Note : 4,8 sur 1
+4,8
+26 notes
+273
+Participants

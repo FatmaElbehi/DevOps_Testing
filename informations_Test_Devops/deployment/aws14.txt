@@ -1,0 +1,154 @@
+Apprenons la sécurité et leur gestion dans Bambu aussi, évidemment, seuls les admins sont capables
+
+pour modifier les paramètres de sécurité de bambou et créer des utilisateurs.
+
+Par conséquent, si vous vous connectez avec un utilisateur disposant d'un accès administrateur, vous accédez à votre page d'aperçu.
+
+Et si vous faites défiler vers le bas, il y a un onglet de sécurité ici.
+
+Donc, la première chose que vous pouvez faire ici est de créer des utilisateurs ou de supprimer des utilisateurs ou de rendre certains utilisateurs inactifs.
+
+Donc pour créer un utilisateur, il vous suffit de taper un nom d'utilisateur est ici les noms d'utilisateur et les noms de groupe et doit être tout
+
+minuscule.
+
+Vous ne pouvez pas utiliser de caractères majuscules, par exemple.
+
+Vous pouvez dire test et vous fournissez un mot de passe et vous lui donnez un nom complet, par exemple, utilisateur de test et
+
+vous fournissez une adresse e-mail.
+
+Et aussi ici, vous pouvez affecter cet utilisateur à un ou plusieurs groupes, puis vous cliquez sur Enregistrer sous
+
+voir et vous utilisez il a été ajouté.
+
+Vous pouvez également rendre les utilisateurs inactifs en supprimant cette case à cocher sur la case à cocher de l'utilisateur actif.
+
+Ceci est utile lorsque quelqu'un quitte votre organisation et lorsque quelqu'un quitte votre organisation, à la place
+
+de supprimer l'utilisateur, vous feriez mieux de le rendre inactif.
+
+Et une fois que vous l'avez fait, utilisez-le inactif.
+
+Vous voyez cette étiquette inactive ici ?
+
+Outre les utilisateurs, nous pouvons également créer à nouveau des groupes pour les groupes, vous pouvez lui donner un nom avec
+
+votre avocat, par exemple, ou des déployeurs, et ce groupe sera, par exemple, utile pour les personnes
+
+qui sont capables et autorisés à déployer votre artefact sur votre service cible.
+
+Et ici, vous ne pouvez pas y affecter des personnes, par exemple, je peux dire que le développeur est dans les déployeurs
+
+groupe, puis vous cliquez sur Enregistrer et votre groupe est ici.
+
+Vous pouvez modifier le groupe ici si vous le souhaitez.
+
+Vous pouvez ajouter d'autres utilisateurs.
+
+Par exemple, chez Bambu Admin fait également partie de ce groupe.
+
+Et lorsque vous ajoutez des utilisateurs, vous verrez que le nombre ici sous la colonne appelé le nombre de
+
+utilisateurs, va continuer à augmenter.
+
+Nous avons également un concept en Bambu appelé Auteurs.
+
+Les auteurs ne sont pas des utilisateurs de Bambu, des auteurs ou de grands utilisateurs ou comme tout autre utilisateur de système de contrôle de source qui
+
+ont enregistré les modifications apportées aux systèmes de contrôle de source qui sont connectés à Bambu.
+
+Donc, si vous vous en souvenez et si nous allons dans la section des référentiels liés dans Bambu, nous avons créé nos référentiels
+
+ici.
+
+Vous savez que les référentiels de liens sont accessibles de toutes sortes dans Bambu.
+
+Et quand les gens aiment les utilisateurs de ces référentiels de contrôle de source, ce qui pour moi est GitHub dot com à
+
+apporter des modifications, ils deviennent auteurs ici et vous pouvez les voir ici.
+
+Les auteurs ne sont pas des utilisateurs de Baumel, mais vous pouvez affecter un auteur à une utilisation en bambou que vous pouvez les associer
+
+ensemble.
+
+Par exemple, j'ai un utilisateur ici et si je clique sur le lien avec l'utilisateur, cela ouvre la boîte de dialogue de l'utilisateur
+
+boîte et si je tape, le développeur apparaît et si je choisis cela et je clique et alors c'est aussi fondamentalement
+
+lié à cet utilisateur.
+
+L'utilisateur lié est donc le développeur.
+
+Et si vous cliquez sur licky unlink user, vous les dissociez.
+
+Qu'avons-nous d'autre en matière de sécurité ?
+
+Vous avez également des paramètres de sécurité, que je ne changerais pas car, curieusement, ils sont comme évidents,
+
+par exemple, pour prévenir les attaques.
+
+Il a une option.
+
+Évidemment, vous ne voulez pas désactiver cette option ou il y a d'autres options que je ne désactiverais pas.
+
+Je ne pense donc pas que vous ayez vraiment besoin de changer quoi que ce soit sur leur sécurité et leurs autorisations.
+
+Et la prochaine fois que vous disposerez d'autorisations globales sur cette page, vous pourrez décider par défaut ce que
+
+l'accès que vous souhaitez accorder aux utilisateurs.
+
+Donc on a vu avant ça quand on crée un utilisateur, il faut l'ajouter à des groupes et ensuite on va pouvoir
+
+pour leur donner des autorisations, soit au niveau de l'utilisateur individuel, soit au niveau du groupe.
+
+Mais si vous le souhaitez, tous les utilisateurs disposent automatiquement d'un ensemble d'autorisations.
+
+Une fois qu'ils sont créés, vous pouvez accéder à votre page d'administration, puis accéder aux autorisations globales et
+
+alors changez les choses ici.
+
+Par exemple, nous pouvons supprimer cette autorisation d'accès aux utilisateurs anonymes, puis avancer tous
+
+utilisateurs.
+
+Dès qu'ils sont créés, nous perdons la capacité de l'utilisateur à voir nos mains.
+
+Facturez des plans sans vous connecter, donc tout le monde devra se connecter pour voir quelque chose.
+
+Et vous pouvez également fournir des droits d'accès par défaut aux groupes et aux utilisateurs ici, c'est plus un
+
+centralisé.
+
+Type de page de gestion des autorisations.
+
+Ce n'est pas comme une autorisation de niveau planifié.
+
+C'est pour une instance Bambu entière, car lorsque vous accédez à un plan ou à un plan de déploiement et que vous
+
+modifier les autorisations des utilisateurs, la portée de cette autorisation n'est que votre plan.
+
+Lorsque les administrateurs font cela, leur mission change dans la page de peinture d'autorisation globale.
+
+Ces autorisations s'appliquent à l'ensemble de l'instance Bambo.
+
+Et aussi, vous avez des référentiels d'utilisateurs ici, vous pouvez gérer les utilisateurs localement, comme ce que nous avons fait
+
+jusqu'à présent, car vous pouvez avoir des utilisateurs locaux ou vous pouvez intégrer Jira.
+
+Jira est un autre produit du même produit et de nombreuses entreprises ont JIRA.
+
+Si votre entreprise dispose de JIRA, vous n'avez pas besoin de créer uniquement des utilisateurs à partir de zéro.
+
+Vous pouvez mettre votre intégration JIRA, votre annonce ici et votre mot de passe également.
+
+Si vous ne connaissez pas votre mot de passe et votre serveur d'intégration, c'est là que vous pouvez parler à l'administrateur de
+
+votre JIRA, puis une fois que vous aurez dit, vous pourrez vous connecter avec vos utilisateurs JIRA.
+
+Vous devrez créer des utilisateurs à partir de zéro.
+
+Voici donc les paramètres de sécurité que vous pouvez faire dans Bambu, très facilement.
+
+Il n'y a rien de super compliqué dans la gestion des permissions dans Bambu.
+

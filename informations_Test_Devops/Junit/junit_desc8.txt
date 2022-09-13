@@ -1,0 +1,177 @@
+In this lesson, I'll show you how to create a new unit test using intelligent development environment
+
+in a project that does not use Maven or Gradle to create a new unit test, I'll create a new jump project.
+
+First, I'll click on New Project Button to create a new project.
+
+Now we can create a new Java project using Maven or Gradle, but this time I'll create a new Java project
+
+that does not use Maven or Gradle.
+
+So I will select Java and then will click on the next button to continue.
+
+I won't be creating project from a template, so I will skip this window and will click on next and
+
+now I will give my project and name.
+
+I will cook calculator will start with a very simple calculator example button.
+
+Later in this course we will look at more complex use cases as well.
+
+All right.
+
+So now I will click on Finish Button to create a new project.
+
+And here we go.
+
+A new project is created and we have a source folder which is currently empty.
+
+Let's create a new Java class to do that.
+
+That will do right mouse click then select new general class and I will call this class calculator.
+
+I will add a very simple challenge method.
+
+Let's call it integer division.
+
+All right, so now we have a method to test, and the method that you are testing is also called method
+
+under test.
+
+Before we can create a new G unit test for this method, we will need to create a test folder.
+
+Currently, this project does not have a folder for test classes.
+
+So to create a new test folder, I will select the project and then do right mouse click choose new
+
+directory.
+
+I will call the directory test and hit enter to let A.G. know that we want to use this directory for
+
+test classes.
+
+We will need to do right mouse click on it and then choose Mark Territory US and then select test sources.
+
+And now we can create a new test class.
+
+To create a new test class.
+
+I will do right mouse click and then choose, generate and select test from the Test Library Dropdown
+
+list.
+
+I can select the unit version that I want to use for this unit test.
+
+I will use G unit five of course.
+
+And next we have this yellow bulb with the message that G Unit five library is not configured in this
+
+module.
+
+To fix this error, we will click on the fix button and this will add to Unit five library to our project.
+
+All right.
+
+I will not change anything here.
+
+Now simply click.
+
+Okay.
+
+And next, he's a class lead and will call this class calculator test.
+
+And it is a common convention to make your test classes end with a test.
+
+So I will keep it as is.
+
+The destination package will need to be the same as a package name for my calculator.
+
+I don't have any package yet, so let's fix that.
+
+I will cancel this window for now and I will move my calculator class from a default package into a
+
+different one that I will create.
+
+So I will do right mouse click and then choose refactor.
+
+And then I will choose move this class to a package that I will create.
+
+For example, chrome apps, developer block and heap on refactor.
+
+All right, so now my calculator class is inside a package that I have just created, and I will try
+
+creating a new unit test again.
+
+So I will do right.
+
+Mouse Click, Choose Generate Test Test Library G Unit five Class Name Calculator and the destination
+
+package will be exactly the same package name as it is for the class I'm creating this test class for.
+
+All right.
+
+I will expand the window a little bit.
+
+Next, we have in the rate section and it has a couple of minutes so at and teardown we will talk about
+
+this method later so I will skip it for now.
+
+And from the list of methods here, I will select the method for which I want to create a unit test
+
+which is integer division method.
+
+Right.
+
+So now I can click on okay button and this will create a new test class with an empty test method.
+
+If I expand my test folder here, I will have a package with exactly the same name as in my main application
+
+sources folder with a test class.
+
+All right, so we have a new unit as created, and at this moment, this is an empty test method.
+
+It doesn't do anything.
+
+And if I run it, it will pass.
+
+So to run unit test, I will click on this play button.
+
+And then I will choose a run in the division test method.
+
+Our test method passed and we have a green checkmark next to the play button.
+
+We have just clicked and also in the test report by default.
+
+If test does not fail, it is considered a percent test.
+
+So if you have a test method that does not assert any condition and does not throw any exceptions,
+
+even if it is absolutely empty, it will pass.
+
+And to see a failing test, we can intentionally fail it with a fail assertion.
+
+For example, we will use fail with a message.
+
+Like, for example, no implementation provided.
+
+Now, if I run this test method, it should fail.
+
+Let's try.
+
+And we have a failing unit test method with a red exclamation mark next to the run button.
+
+And also we do not see green checkmarks in the test report as well.
+
+All right.
+
+So this was just a demonstration of how you can create a new test class using intelligent development
+
+environment in a very simple Java project.
+
+And in the following list and I'll show you how to create a new project and a new test class using Eclipse
+
+Development Environment.
+
+If you do not use a claims development requirement, then please feel free to skip the following lesson.
+
+Unit Testing & Integration Testing of Java and Spring Boot applications.

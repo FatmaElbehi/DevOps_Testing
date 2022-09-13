@@ -1,0 +1,92 @@
+OK, alors maintenant il est temps de déployer notre artefact sur les serveurs de notre cible, car l'intégration continue
+
+consiste uniquement à compiler le code et à vérifier que les modifications sont correctes et les nouveaux tests
+
+sont passés.
+
+Mais alors nous ne travaillons pas seulement sur l'intégration continue dans ce cours, nous enseignons en continu
+
+l'intégration et la livraison, et maintenant il est temps de livrer nos artefacts.
+
+Il existe de nombreuses manières différentes de déployer les artefacts.
+
+Et dans ce cours, je vais vous montrer quelques façons différentes de le faire pour vous.
+
+Il est préférable de comprendre les concepts afin de pouvoir utiliser ces techniques et concepts dans de nombreux
+
+scénarios si vous utilisez Amazon Web Services.
+
+Ce sujet est pour vous.
+
+Si vous ne le faites pas, vous pouvez passer au sujet suivant, au prochain ensemble de sujets et apprendre comment vous pouvez déployer
+
+vos artefacts si vous n'utilisez pas Amazon Web Services, si vous utilisez Amazon Web Services.
+
+C'est ainsi que nous allons déployer nos artefacts.
+
+Vous avez donc votre code source dans une sorte de système de contrôle de code source tel que GitHub, puis nous
+
+récupérez toutes les modifications dans un répertoire de travail.
+
+Nous pouvons également avoir des scapes supplémentaires.
+
+Et les fichiers Yamal, ou, par exemple, la formation de nuages ​​sont des crèches et tout ce qui est lié à l'un ou l'autre
+
+déploiement réel ou d'examiner la configuration de votre environnement final.
+
+Nous ne voulons donc pas mélanger ces scripts avec notre code source réel pour de nombreuses raisons.
+
+L'un d'eux est qu'ils ne font pas partie de votre projet en tant que système de contrôle de source, ils ne devraient donc pas
+
+être mélangé avec vous.
+
+Ou, par exemple, un site Web détaché, ils sont générés par différents types de personnes.
+
+Par exemple, si vous avez un script PowerShares sur Configures, votre IATSE d'une certaine manière, ou pour
+
+exemple, un script qui copie différents types de fichiers de configuration dans l'emplacement cible, ceux
+
+les scripts sont probablement générés par les ingénieurs dev ops, alors que le site Web réel est créé par les développeurs.
+
+Vous devez donc également les séparer.
+
+C'est pourquoi nous avons deux référentiels ici.
+
+Le deuxième référentiel est normalement appelé.
+
+Il a sa plate-forme en tant que service.
+
+C'est un nom très courant en voyant ce genre de nom dans un référentiel ou un dossier, vous savez que quoi
+
+type de scripts existe-t-il ?
+
+Et ce que nous faisons ici, c'est que normalement, juste avant de tout emballer et d'être déployé, nous tirons
+
+les scripts Poza du référentiel afin que tout aille dans le répertoire de travail.
+
+Et à partir de là, nous pouvons créer un artefact.
+
+Il peut s'agir d'un fichier zip ou simplement d'un ensemble de fichiers.
+
+Et normalement, si nous créons une tyrolienne, nous la mettons sur Amazon S3, puis à partir d'Amazon S3, nous pouvons utiliser
+
+un service comme Amazon.
+
+Pourrait se déployer pour se déployer sur les observateurs cibles.
+
+C'est donc ce que nous allons faire dans ce sujet et ce sujet peut être décomposé en sujets plus petits
+
+juste pour que vous puissiez suivre le sujet assez facilement.
+
+Et si vous n'utilisez pas Amazon, je pense qu'il est bon pour vous de parcourir ce sujet de toute façon.
+
+Il y a des choses à en tirer.
+
+Revenons donc à Bambu et voyons comment nous pouvons déployer un artefact.
+
+Continuous Integration and Delivery (CI/CD) with Bamboo for Devops and Developers
+Note : 4,5 sur 1
+4,5
+1 242 notes
+8 210
+Participants

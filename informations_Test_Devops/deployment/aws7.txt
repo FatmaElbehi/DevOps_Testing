@@ -1,0 +1,139 @@
+Dans ce sujet, je veux vous montrer mon script après l'installation et expliquer pourquoi avons-nous un après
+
+script d'installation ?
+
+La raison pour laquelle j'ai ce groupe est que lorsque vous déployez votre package dans un environnement différent,
+
+vous devez avoir le fichier de configuration approprié avec votre application.
+
+Parce que lorsque vous construisez votre application dans votre plan de build en bambou, vous créerez un artefact qui
+
+est en quelque sorte indépendant de l'environnement, puis vous déploierez cet artefact dans différents environnements tels que
+
+comme mise en scène et production.
+
+Et chaque fois que cet artefact va dans un environnement différent, il a besoin d'une configuration différente.
+
+Amende.
+
+Évidemment, lorsque vous êtes dans un environnement où vous ne voulez pas avoir accès, par exemple, à la production,
+
+base de données, production, informations d'identification, production, services Web.
+
+Par conséquent, vous avez besoin d'un fichier de configuration spécifique pour l'environnement.
+
+De même, lorsque votre artefact va dans un environnement de production, il en a besoin.
+
+Fichiers de configuration pertinents pour les environnements de production afin que vous puissiez accéder à la production, à la base de données
+
+production, services Web, etc.
+
+C'est pourquoi nous avons le script après l'installation.
+
+Passons donc au serveur Web.
+
+Il s'agit du serveur Web et ce sont les fichiers que nous avons copiés à l'aide du code déployé sur le serveur.
+
+Et comme vous le voyez ici, j'ai un dossier appelé A to config.
+
+Il peut avoir n'importe quel nom.
+
+C'est juste un nom que j'ai choisi pour ceux-ci.
+
+Et je vous dirai pourquoi plus tard.
+
+Et comme vous le voyez, j'ai deux fichiers de configuration ici.
+
+L'un est Web dot kuai config et l'autre est une société de production Web dot.
+
+Kuai et production sont les noms de mes environnements.
+
+Et comme je l'ai déjà dit, parce que nous aimons le design par contrat, nous avons décidé que partout où nous utilisions le
+
+mêmes noms pour les environnements.
+
+Par conséquent, parce que dans mon Bambu, le nom de mon environnement de bac à sable est Kuai in court diploïde.
+
+J'ai donné le même nom au groupe de déploiement et ici aussi j'ai donné le même nom pour le conflit
+
+déposer.
+
+Je sais donc que lorsque j'ai déployé cela sur Kuai, je dois utiliser le Web qui a créé la configuration et ce que cela
+
+après le script d'installation, il récupère cette configuration Web dot cuidad et la copie sur Web.com
+
+Fiqh.
+
+Et fondamentalement, cela remplace cela, donc si je clique sur après en avoir installé un, vous verrez que ce n'est qu'un
+
+script de doublure qui dit copie.
+
+De mer, un pub, dub, dub, dub grossiers transformés configurent le point Web, puis une variable qui
+
+peut être Kuai ou la production, puis copié sur Web.com, une grande force signifie qu'on sur-identifie.
+
+Donc c'est super simple, c'est juste un exemplaire neuf.
+
+Mais comment ce script sait-il dans quel environnement il s'exécute ?
+
+La chose super intéressante est que lorsque vous exécutez, cela est gratté sur le quad déploie essentiellement le processus
+
+par l'agent de déploiement utilisateur qui est l'agent qui transmet le nom du groupe de déploiement et le nom de l'application
+
+à votre script, et vous pouvez y accéder en tant que variables d'environnement, vous savez, comme dans votre exploitation
+
+système, par exemple, dans Windows, vous pouvez avoir des variables d'environnement.
+
+Vous pouvez lire les variables d'environnement dans votre script.
+
+Et de la même manière, vous pouvez lire le nom du groupe de déploiement et le nom de l'application
+
+également.
+
+Donc, comme vous voyez la première ligne ici, elle définit une variable appelée E et le nom ou le nom de l'environnement,
+
+et puis c'est égal à l'autre extrémité.
+
+Est une sorte de macro pour la Russie, vous permet d'accéder au nom de la variable d'environnement puis au déploiement
+
+sur le groupe souligné name est un nom qui est passé à ce script par le déploiement de code.
+
+Vous pouvez également avoir le nom de l'application.
+
+Si vous recherchez cela dans la documentation d'Amazon, vous en verrez environ quatre ou cinq que vous pouvez
+
+avoir accès à.
+
+Et peu importe même si vous utilisez comme des groupes fascistes, vous pouvez avoir accès exactement au même environnement
+
+variable et l'utiliser à votre avantage.
+
+Donc en sachant que vous pouvez avoir un script basé sur l'environnement que vous déployez votre artefact
+
+à, vous pouvez faire différentes choses.
+
+C'est un script simple, mais il fait des merveilles car sans cela, nous ne serions pas en mesure d'avoir le bon
+
+fichier de configuration pour notre environnement.
+
+Donc peu importe si vous utilisez cela peut être un python, quoi que vous utilisiez, vous pouvez avoir un dossier
+
+dans vos fichiers d'artefacts finaux et y mettre tous les conflits comme ceux-ci.
+
+Et puis avec l'instance après, nous avons juste choisi la bonne et copié sur le réel quelque chose.
+
+Assez facile ça.
+
+Maintenant, dans le prochain sujet, je vais vous montrer comment j'ai généré ces trouvailles de configuration.
+
+C'est un document, un sujet précis.
+
+Si vous n'utilisez pas Stuxnet, vous pouvez l'ignorer.
+
+La raison pour laquelle j'ai un sujet spécifique à ce sujet est que c'est un problème très important et courant chez Stuxnet.
+
+Le premier est qu'ils se demandent toujours comment ils peuvent transformer les lignes de conflit.
+
+Et c'est pourquoi je vais l'expliquer.
+
+Si vous n'utilisez pas Stuxnet, n'hésitez pas à sauter le sujet suivant.

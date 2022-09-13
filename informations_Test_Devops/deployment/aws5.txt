@@ -1,0 +1,313 @@
+Avant de retourner à Bambu et de finaliser notre projet de déploiement pour le projet comptable, je viens de
+
+voulons vous montrer que quel type de structure de financement nous voulons mettre en place pour déployer notre
+
+site utilisant avec succès un déployable capable de se déployer, s'attend à ce que vos fichiers d'artefacts soient ensemble.
+
+Et en plus d'eux, il s'attend à ce que vous ayez un dossier appelé prospectus.
+
+Pourquoi et pourquoi l'extension des fonds Yamal ?
+
+Et si vous ne le savez pas, les fichiers Yamal sont une sorte de langage de balisage ou de balisage et ils sont similaires
+
+à JSON attendu, sauf qu'au lieu de crochets et d'accolades, vous utilisez principalement les espaces dans
+
+pour formater votre document.
+
+Maintenant, ce que vous mettez en place une spécification est au strict minimum pour montrer où vos fichiers d'artefact
+
+sont et ensuite où vous voulez les copier.
+
+C'est le strict minimum de détails que vous devez mettre dans une exigence spécifique et vous pouvez également
+
+avoir des scripts facultatifs à exécuter avant le déploiement de l'artefact et après le déploiement de l'artefact.
+
+Évidemment, si vous voulez en savoir plus à ce sujet, vous pouvez lire la documentation d'Amazon dans notre exemple.
+
+L'artefact provient du plan de build comptable et nous l'avons déposé et nous l'avons mis dans un dossier appelé
+
+Teneur.
+
+C'est parce que nous ne voulons pas mélanger l'atmosphère et la pré-installation et la post-installation
+
+de scripts avec les fichiers du site Web, nous voulons les garder séparés.
+
+Nous retirons donc l'artefact du plan et nous mettons tout le contenu dans un dossier séparé appelé contenu.
+
+Et afin d'obtenir le fichier YAML apostolique et ensuite l'installation est celle de Crib, nous les récupérons directement
+
+de GitHub.
+
+Je les ai donc mis dans un dépôt dans GitHub.
+
+Nous utilisons simplement git, puis nous obtenons le clonage de ce référentiel.
+
+Nous récupérons les fonds, nous les mettons à côté du dossier de contenu.
+
+Quand tu retourneras à Bambu, je te montrerai car ça échouera si le dossier est déjà là, c'est
+
+ne va pas cloner le référentiel.
+
+Je vais mettre tous les fichiers que je reçois de GitHub, le fichier Yamal et les scripts dans un sous-dossier.
+
+Et plus tard, après cela, je vais récupérer les artefacts et les mettre dans ce sous-dossier.
+
+Ce faisant, alimentez-en un sinon, car le dossier sera déjà là, le répertoire de travail
+
+de bambou sera déjà là, il ne réussira pas à cloner le Yamal et le pouvoir SureScripts et à mettre
+
+les dans le répertoire de travail.
+
+Je vais donc les mettre dans un sous-dossier.
+
+Et juste parce que je veux que le contenu soit à côté du fichier Yamal, je dois obtenir l'artefact
+
+puis placez-le dans un dossier de contenu à l'intérieur de ce dossier.
+
+C'est donc la structure que nous voulons faire.
+
+Et avant de retourner à Bambo, allons chercher de l'aide et je vais vous montrer le dossier spécifique que nous
+
+ont.
+
+Voilà donc mon précieux dossier.
+
+Et puis avant l'installation et après les trouvailles installées.
+
+Je vous parlerai après l'installation du script plus tard.
+
+Dans la chanson d'avant, il n'y a en fait rien.
+
+Il a juste besoin de tous les fonds existants.
+
+C'est tout ce qu'il fait.
+
+Donc, vous n'avez pas vraiment besoin d'avoir cela si vous ne le souhaitez pas.
+
+Je l'utilise juste pour nettoyer le téléphone avant que le site Web ne classe notre copie.
+
+Et la fonte apostolique est un fichier très, très simple.
+
+Comme vous le voyez, il est très petit et très simple à déployer.
+
+Leur version doit toujours être zéro point zéro.
+
+Toute autre version échouera.
+
+Et pour OS parce que j'utilise la machine Windows, nous tapons Windows.
+
+Si vous utilisez Linux, ouvrez simplement Linux ici.
+
+On trouve une source de section signifie où se trouvent mes fichiers, certains de mes fichiers vont être dans un dossier appelé
+
+Contenu, comme je l'ai déjà dit.
+
+Quelle est la destination ?
+
+La destination est essentiellement l'endroit où se trouve l'IRS.
+
+Le quatrième site Web est.
+
+Et c'est voir les déracinements.
+
+Les livres sont les scripts que nous pouvons exécuter.
+
+Donc avant l'installation, nous exécutons, avant d'en installer un et après l'installation, nous utilisons après en installer un
+
+plus tard, je vous dirai pourquoi nous en avons besoin après l'installation et ce que nous en faisons.
+
+Alors pour l'instant, concentrons-nous sur ce gadget.
+
+Et je vais attacher le lien vers ce référentiel, vers ce sujet afin que vous puissiez cloner ce référentiel
+
+et utiliser les fichiers.
+
+Maintenant nous retournons à Bambu et nous finalisons le projet de déploiement.
+
+Alors maintenant, nous sommes dans notre projet de déploiement avant de commencer à travailler là-dessus, mais je vais le faire, c'est que
+
+nous devons aller sur notre page d'administration car nous devons définir deux choses.
+
+L'un d'eux est que nous avons besoin d'informations d'identification pour
+
+un WS, que j'ai ajouté ici, car vous souhaitez accéder au déploiement du code et vous souhaitez accéder à Amazon
+
+S3 en bambou.
+
+Vous devez aller sur Amazon, créer un utilisateur IAM et accorder l'accès à S3 et accorder l'accès à l'accès
+
+dont vous avez besoin pour qu'une histoire soit lue et écrite car vous téléchargez le contenu et les fichiers Yamal dans
+
+un format d'un fichier zip dans une histoire dont vous avez besoin d'un accès correct et vous avez également besoin d'un accès au déploiement de code juste
+
+afin que vous puissiez créer un nouveau déploiement.
+
+Vous n'avez pas besoin de trop d'accès, tout comme un rôle de déployeur principal est suffisant et vous obtenez l'accès
+
+key clé secrète et vous la mettez ici et vous lui donnez également un nom, que j'ai, et déployez également.
+
+Vous devez donc mettre vos identifiants en mode administrateur et identifiants partagés, vous devez également créer un
+
+référentiel lié.
+
+J'ai donc déjà un référentiel appelé référentiel comptable.
+
+C'est celui qui comprend le site Web et j'en ai déjà créé un autre qui pointe vers
+
+le référentiel GitHub que je viens de vous montrer.
+
+Et cela inclut les cinq et une trouvailles.
+
+Et en utilisant ces deux, je vais créer un package zip et le mettre sur ces trois.
+
+Il n'y a rien de secret ici, c'est juste le simple référentiel get avec nom d'utilisateur et mot de passe et
+
+les branches par défaut.
+
+Vous allez donc créer ces deux éléments afin de pouvoir finaliser votre projet de déploiement en projet de déploiement.
+
+La première chose que nous devons faire est de vérifier le fichier YAML et les scripts de post-installation et de pré-installation.
+
+Donc, nous ajoutons la tâche et nous devons contrôler la source et nous l'appelons a, par exemple, et nous l'obtenons de
+
+pouvoirs comptables.
+
+Et comme je l'ai dit, mettons-le dans un sous-répertoire.
+
+On peut appeler les pods, par exemple.
+
+Ou vous pouvez lui donner un autre nom, cela n'a pas d'importance, puis vous cliquez sur Enregistrer après cela.
+
+Comme je l'ai déjà dit, nous voulons obtenir les fichiers d'artefacts et les placer dans un sous-dossier à l'intérieur des pods.
+
+Et la raison pour laquelle nous faisons cela est que nous voulons que Yamal fine réside essentiellement à côté du dossier de contenu
+
+et le dossier de contenu inclura les fichiers réels du site Web.
+
+Nous allons donc autre tâche.
+
+Nous cliquons sur le déploiement, comme vous le voyez, il y a une tâche ici appelée Artifact Download, et cela aide
+
+nous pour obtenir les fichiers d'une autre planète.
+
+Parce que nous avons construit le site Web dans un plan et nous sommes maintenant en déploiement et nous avons besoin de cette tâche afin de
+
+obtenir les artefacts par défaut, il télécharge tous les artefacts.
+
+Mais l'un des artefacts dont nous disposons n'est en fait qu'un résultat d'inspection de code.
+
+Et nous ne voulons pas déployer cela.
+
+Nous obtenons juste l'artefact du site Web.
+
+Il s'agit de l'artefact que nous avons créé dans le plan comptable, et ce dossier de mission contient les DPA, puis le contenu.
+
+Donc, en faisant cela, le contenu de leurs téléphones à côté du fichier Yémen, c'est ce dont nous avons besoin.
+
+Facile.
+
+De quoi avons-nous besoin ensuite ?
+
+Nous avons juste besoin de déployer Tusk pour le déployer, si vous utilisez un serveur Apache ou Tomcats, où vous pouvez
+
+utiliser une tâche pertinente, par exemple, dans le déploiement, vous pouvez utiliser le déploiement Tomcat, Dufka, n'importe quoi
+
+qui vous convient pour ce sujet, nous utilisons ce déploiement et la description de la tâche peut être.
+
+En gros, il suffit de déployer.
+
+À.
+
+Déployer.
+
+Le pour.
+
+Si la.
+
+Et pour les identifiants, car nous avons déjà restauré nos identifiants, dans la page d'avis reçue
+
+ici, devis, déployeur, nous choisissons cette région devrait être la région de votre.
+
+Serveurs cibles et pourquoi les serveurs cibles sont présents.
+
+Asie-Pacifique, Sydney, AP, s UE, et donc je choisis que si vous êtes dans d'autres endroits, vous
+
+choisissez la région qui vous convient et le dossier avec lequel nous travaillons car tous les fichiers y sont.
+
+De quoi d'autre avons-nous besoin, nous avons besoin des trois seaux, les seaux que j'ai créés ces petits bambous nous qui
+
+et si vous vous souvenez à Detroit, nous avons créé une application appelée Comptabilité et c'est ici et nous avons créé
+
+un groupe de déploiement appelé Q8.
+
+C'est ici que vous pouvez créer des groupes de déploiement pour, par exemple, la mise en scène et cela viendra ici.
+
+Et aussi, si vous avez un compte Amazon complètement différent pour la production, ce que vous pouvez faire est
+
+pour avoir des informations d'identification séparées ici pour une production, choisissez les informations d'identification, puis à partir de là,
+
+choisissez l'application.
+
+Et puis, par exemple, le déploiement de la production ici, disons.
+
+C'est très facile.
+
+Nous revenons donc au projet de déploiement et ici vous pouvez déployer.
+
+Donc ici, vous pouvez lui donner un nom, par exemple, nous pouvons dire en premier.
+
+Déploiement
+
+ou tout autre nom que vous voudriez donner à cela et puis vous cliquez sur démarrer le déploiement, c'est
+
+va se connecter pour déployer et déployer les fonds.
+
+Je vais donc aller sur Amazon et très bien pour le déploiement et notre application est ici, et comme vous le voyez, il y a un
+
+déploiement en cours.
+
+Et nous attendons que ce soit fini, que ce soit la fin, et le nombre est les déploiements que nous avons créés
+
+et ça a vu progresser une fois que c'est fini, nous.
+
+Nous allons vérifier le site Web en allant sur la console Amazon et dans un deuxième déploiement, nous voyons qu'un déploiement
+
+a été créé.
+
+C'était en cours et ça a réussi, comme vous le voyez.
+
+Alors, oui, nous avons réussi à nous déployer.
+
+Maintenant, nous allons à Bambu et vous voyez que le déploiement du bambou a également réussi.
+
+Bamboo attendra la fin du déploiement et le retour.
+
+OK, alors maintenant, nous allons voir que notre site Web est réellement opérationnel sur le serveur.
+
+OK, c'est donc notre serveur Web.
+
+La première chose que nous devons vérifier est de voir et de s'assurer que les fichiers ont été copiés pour voir sur
+
+Terre.
+
+Oui, tous les fichiers sont ici.
+
+Et nous devons également entrer ici en tapant localhost et voilà.
+
+Au lieu du site Web Iooss par défaut, nous voyons notre site Web NBC qui a été déployé.
+
+Alors félicitations.
+
+Vous avez fait votre premier déploiement, ce qui est génial.
+
+Dans le sujet suivant, je vais vous montrer ce qui s'est passé dans le script de post-déploiement et aussi ils
+
+sera interrogé sur un autre sujet, qui est un peu plus spécifique sur la façon dont vous pouvez générer un environnement
+
+fonds de configuration spécifiques.
+
+Alors allons-y et faisons ça.
+
+Continuous Integration and Delivery (CI/CD) with Bamboo for Devops and Developers
+Note : 4,5 sur 1
+4,5

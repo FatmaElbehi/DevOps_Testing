@@ -1,0 +1,115 @@
+Dans Bambu, pour déployer un artefact, nous devons créer un projet de déploiement et pour ce faire, tous
+
+vous devez faire est d'aller à votre plan de construction.
+
+Et puis à la fin de toutes les étapes, vous verrez qu'il y a un bouton qui dit déploiement du transporteur
+
+le concept de projet de projet de déploiement est en fait une bonne idée car vous séparerez votre
+
+processus d'intégration de votre projet et processus de livraison continue, et il vous permet d'avoir un
+
+une meilleure visibilité sur ce qui a été déployé vers vos différents environnements qui déploient l'aide.
+
+Vous pouvez limiter l'accès aux déploiements.
+
+Vous pouvez fondamentalement avoir différents ensembles de projets et séparer les préoccupations des déploiements et de la construction
+
+et de créer un projet de déploiement.
+
+Évidemment, vous créez, cliquez sur Créer un projet de déploiement et il y a un nom ici par défaut.
+
+Il indique simplement le déploiement pour, puis le nom du plan de build le laissera tel quel.
+
+Et le plan de build que nous voulons utiliser pour déployer est la comptabilité, c'est un projet, puis
+
+encore une fois la comptabilité, c'est le nom du régime.
+
+Par défaut, nous travaillons sur le schéma directeur.
+
+Si vous avez des branches planifiées, vous choisissez une autre branche de plan.
+
+Mais nous utilisons Marzook pour le moment, puis nous cliquons sur Créer un projet de déploiement.
+
+Il va créer le projet de déploiement.
+
+Une fois que vous avez le projet de déploiement, vous pouvez créer différents environnements car évidemment lorsque
+
+vous créez un artefact, vous voulez d'abord le tester, par exemple, dans un environnement akua, puis peut-être
+
+vous souhaitez déployer ensuite dans un environnement intermédiaire.
+
+Les environnements de transfert sont normalement identiques à vos environnements de production, et c'est là que vous
+
+testez dans un environnement de préproduction pour vous assurer qu'une fois que votre changement passe en production, il n'est pas
+
+va faire des ennuis.
+
+Et puis vous avez un environnement de production.
+
+Ainsi, un projet de déploiement dans Bambu vous permet d'avoir plusieurs environnements et chaque environnement sera
+
+a ses propres spécifications et les gens n'auront accès qu'à l'environnement qui est pertinent pour
+
+eux.
+
+C'est un bon moyen d'organiser le projet de déploiement afin que nous puissions cliquer sur AJOUTER un environnement ici et
+
+alors nous pouvons l'appeler, par exemple, la rainure de clavette, puis nous cliquons sur continuer vers les tâches configurées.
+
+OK, alors maintenant ici.
+
+Nous avons un plan qui est très similaire au plan avec lequel nous avons travaillé auparavant, et il doit définir des tâches par défaut
+
+ici.
+
+Le premier est une configuration de tâche de répertoire de travail propre.
+
+Il supprime simplement tout fichier que vous avez peut-être déjà des déploiements précédents dans votre répertoire de travail
+
+les supprime simplement.
+
+Et le second est le téléchargement d'artefact, qui télécharge l'artefact de votre plan de build, et par défaut,
+
+il télécharge tous les artefacts.
+
+Mais alors vous pouvez choisir un artefact spécifique, comme vous le voyez ici.
+
+Nous ne voyons pas l'artefact réel que nous avons généré.
+
+Nous ne voyons qu'un seul artefact ici, qui est le résultat de l'inspection du code.
+
+Et c'est parce que nous n'avons pas dit que l'artefact du site Web est un artefact partagé.
+
+C'est pourquoi nous devons revenir en arrière et en faire un artefact partagé.
+
+Et puis nous pouvons ajouter plus de tâches ici.
+
+Donc pour l'instant, gardons ceci et revenons à notre.
+
+Bill Plante.
+
+Et puis nous pouvons aller au travail par défaut et je vais désactiver cette tâche Zipp et je vais aux artefacts et ici
+
+Je dirais copier les anciennes trouvailles et je dirai qu'il s'agit d'un artefact partagé.
+
+D'ACCORD.
+
+Fait.
+
+Donc, si je passe au déploiement pour la comptabilité, qui est un projet de déploiement et que je passe à l'environnement Kuai,
+
+J'ai effectué des sous-tâches d'environnement si je vais au téléchargement d'artefact maintenant ici, je verrai les artefacts de mon site Web
+
+parce que j'ai dit que c'était un artefact partagé.
+
+Et puis nous cliquons sur Enregistrer.
+
+Maintenant, à partir de là, vous pouvez faire différentes choses.
+
+Pour ce sujet, nous voulons aller de l'avant, nous voulons tout déployer sur Amazon Web Services, mais
+
+même si vous n'utilisez pas Amazon, vous devrez suivre ces étapes et créer un artefact de déploiement.
+
+Continuous Integration and Delivery (CI/CD) with Bamboo for Devops and Developers
+Note : 4,5 sur 1
+4,5

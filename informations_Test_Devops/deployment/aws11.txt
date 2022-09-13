@@ -1,0 +1,199 @@
+Dans cette rubrique, je veux vous montrer comment vous pouvez gérer les autorisations sur votre plan de build ainsi que
+
+votre plan de déploiement, donc pour gérer les permissions, vous irez dans votre partie et vous
+
+allez à configurer le plan.
+
+Et ici, il y a un onglet, qui est les autorisations.
+
+Et ici, vous pouvez évidemment, comme vous le voyez, accorder l'accès aux utilisateurs et aux groupes et vous pouvez également définir
+
+et configurer les autorisations générales à partir des autorisations générales.
+
+Vous avez deux options.
+
+Le premier dit que les utilisateurs anonymes, cela signifie que les utilisateurs qui ne se sont pas encore connectés peuvent
+
+voir votre plan de pilule.
+
+Et les utilisateurs connectés aussi, ils peuvent voir que votre Bill Plante me laisse me déconnecter de bambou donc
+
+Je ne suis pas connecté à bambou maintenant car il y a une icône de connexion ici, comme dans le bouton ici.
+
+Mais je peux voir les plans de facturation aussi parce que je ne suis pas connecté.
+
+La raison en est que, comme je vous l'ai montré dans l'enclos des releveurs et dans la section des autorisations, nous avons dit que
+
+les utilisateurs anonymes peuvent voir ce plan.
+
+Donc, si nous supprimons cette case à cocher et nous déconnectons à nouveau, nous ne pouvons pas voir le plan de build.
+
+Ainsi, par défaut, Bamboo permet aux utilisateurs anonymes de voir les plans de build ainsi que les plans de déploiement.
+
+Nous retournons donc à la configuration du plan et nous revenons aux autorisations.
+
+Donc, ici, nous avons dit que les utilisateurs anonymes ne peuvent pas voir tout le plan, mais s'ils enregistrent le journal
+
+dans les utilisateurs, ils peuvent voir notre plan.
+
+De plus, je vous expliquerai en détail le système de sécurité à Bambu plus tard.
+
+Mais pour l'instant, dans Bambu, vous pouvez avoir des utilisateurs individuels, par exemple.
+
+Maintenant, je suis connecté avec l'utilisateur admin.
+
+Et voyons pour nous assurer qu'il s'agit d'un administrateur.
+
+Utilisateur administrateur, donc je ne suis pas connecté en tant qu'administrateur utilisateur, vous pouvez donc avoir des utilisateurs individuels et vous pouvez également
+
+avoir des groupes pour regrouper les utilisateurs et vous pouvez accorder l'accès aux deux niveaux.
+
+Par exemple, au niveau utilisateur, vous pouvez voir la liste de tous les utilisateurs avec leur accès.
+
+Ainsi, un utilisateur peut voir avec des plans, il peut modifier le plan, ce qui signifie que vous pouvez ajouter, supprimer les étapes et
+
+les travaux et les tâches que vous pouvez commencer à créer ou vous pouvez cloner la génération, la planification et la modification et deux petites choses
+
+pour créer un nouveau plan.
+
+Ou vous pouvez l'administrer entièrement, ce qui signifie que vous pouvez même supprimer le plan ou modifier le
+
+autorisations d'autres utilisateurs sur ce plan.
+
+Et si vous voulez ajouter un nouvel utilisateur maintenant, je n'ai pas besoin de l'utiliser.
+
+Mais si je l'avais fait, vous pourriez, par exemple, simplement taper votre nom et puis si le nom est venu, alors
+
+vous pouviez choisir la permission que vous vouliez accorder.
+
+Par exemple, vous pouvez dire à chacun et construire, puis cliquer sur le bouton Ajouter et il va l'ajouter
+
+ici.
+
+En fait, allons peut-être le faire maintenant, donc si nous allons à Overy.
+
+Et nous allons aux utilisateurs, je vous montrerai plus tard comment vous gérez les utilisateurs.
+
+Et ici, si je dis que j'ajoute un nouvel utilisateur, cela peut être, par exemple, un développeur et un mot de passe
+
+quelque chose et le nom est développeur.
+
+Et ils sont venus, par exemple.
+
+Mon nom d'utilisateur est donc développeur un.
+
+Il doit donc être tout en minuscules.
+
+J'ai donc un utilisateur maintenant, je vous montrerai plus tard comment créer et gérer des utilisateurs.
+
+Pour l'instant, nous voulons juste avoir un utilisateur supplémentaire.
+
+On revient donc à la configuration du plan puis on passe aux autorisations, donc ici, si je range.
+
+Mon utilisateur apparaît et nous choisissons cela, puis nous disons, je veux une date et je ne veux pas autoriser l'utilisateur
+
+pour cloner de gros plans, je ne veux pas pouvoir modifier les autorisations ou supprimer le plan.
+
+Et nous cliquons sur AJOUTER et comme vous le voyez, cela ajoute le développeur avec ajouté et être.
+
+Donc vous pouvez faire la même chose avec les groupes, donc ici, si je tape A, ça fait apparaître le Bambu par défaut
+
+Admin Group et ici, je peux dire que ces personnes sont des administrateurs, puis vous cliquez sur AJOUTER.
+
+Alors maintenant, chaque fois que vous ajoutez quelqu'un à ce groupe, à Bambu Admin Group, il aura automatiquement
+
+accès administrateur à ce plan.
+
+Si facile, vous pouvez aussi.
+
+Faites la même chose pour le déploiement et.
+
+Ainsi, lorsque vous accédez à votre déploiement et que vous voyez qu'il y a un bouton ici pour les autorisations.
+
+Autorisation du projet en cliquant dessus, vous accédez exactement au même écran, ce qui permet aux utilisateurs anonymes
+
+pour voir votre déploiement, ce qui n'est pas une bonne idée.
+
+Nous les supprimons donc et vous pouvez à nouveau taper le développeur, par exemple, et vous pouvez dire développeur
+
+est en mesure de modifier cela.
+
+Ensuite, vous ajoutez.
+
+Donc les autorisations.
+
+Ainsi, la configuration des autorisations du projet pour le déploiement est identique à la configuration des autorisations pour
+
+Bilpin.
+
+Vous pouvez également, outre les autorisations du projet, contrôler les autorisations de votre environnement car dans
+
+un projet de déploiement, vous pouvez avoir plusieurs environnements car comme je l'ai dit, vous pouvez avoir un environnement Kuai
+
+et puis vous pouvez ajouter un autre environnement, sans guillemets, par exemple, staging, puis vous ajoutez un autre
+
+l'environnement et vous l'appelez production.
+
+Donc, évidemment, tout le monde peut déployer dans votre environnement car c'est votre dire quelque chose de similaire au bac à sable
+
+et il peut y avoir un nombre limité d'utilisateurs pouvant déployer dans votre environnement intermédiaire, puis très limité
+
+nombre de personnes pourront se déployer dans l'environnement de production car l'environnement de production est
+
+censé être très contrôlé.
+
+Par conséquent, vous devez avoir et pouvoir imposer des autorisations et des restrictions sur votre environnement de production.
+
+C'est pourquoi vous disposez également d'une autorisation et d'un contrôle au niveau de l'environnement.
+
+Ainsi, lorsque vous accédez à votre déploiement et que vous voyez vos environnements un par un, puis sous chaque environnement
+
+vous avez un bouton qui dit autorisations d'environnement.
+
+Et en cliquant dessus.
+
+Vous allez sur une page similaire, sauf que pour chaque utilisateur, vous avez une mission de paire supplémentaire qui est déployée
+
+ici.
+
+Par exemple, si j'ai tapé le et que mon utilisateur développeur apparaît ici en dehors de l'affichage et de l'édition, vous
+
+ayez également un déploiement par mission et cliquez sur AJOUTER, puis utilisez ce code.
+
+Le développeur pourra déployer dans l'environnement Kuai.
+
+Vous pouvez également faire la même chose avec des groupes, par exemple.
+
+Je peux dire que les groupes d'administrateurs en bambou peuvent se déployer dans un environnement.
+
+Si tu ne veux pas.
+
+Tous les utilisateurs et groupes individuellement pour cela, un plan d'environnement, vous pouvez dire n'importe quel utilisateur anonyme
+
+ne peut même pas voir cet environnement, mais si les utilisateurs se connectent, ils sont invités à déployer dans cet environnement
+
+parce que c'est un environnement.
+
+Tant que les gens peuvent se connecter, ils sont OK.
+
+Ils peuvent être libres de créer un environnement.
+
+Mais peut-être que s'il s'agissait d'un environnement de production, vous n'autoriseriez pas le déploiement des utilisateurs connectés.
+
+Au lieu de cela, vous diriez que seuls les administrateurs peuvent déployer.
+
+Par exemple, il est préférable de créer un groupe appelé comme Déployeurs, puis de leur permettre de
+
+déployer les artefacts dans vos environnements.
+
+C'est mieux.
+
+Donc, comme nous, nous avons trois niveaux d'autorisations avec les autorisations de plan, puis nous avons un déploiement
+
+autorisations de projet et également au sein d'un projet de déploiement de projet, nous pouvons contrôler les autorisations ici
+
+environnement.
+
+C'est à peu près ça.
+
+Et allons voir ce que nous pouvons faire d'autre.

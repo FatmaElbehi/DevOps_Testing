@@ -1,0 +1,276 @@
+Dans cette rubrique, je souhaite vous présenter les paramètres de notification d'un bambou, car le bambou, vous
+
+sont capables d'envoyer des notifications lorsque des choses se produisent, par exemple, lorsqu'une facture est complétée avec succès
+
+ou lorsqu'une facture échoue ou que quelqu'un déploie le projet dans votre environnement de production ou kuai.
+
+Vous pouvez donc essentiellement contacter vos utilisateurs et leur faire savoir que des choses se passent dans le bambou.
+
+Pour envoyer des notifications, la première chose que vous devez faire en tant qu'administrateur dans Bambu est de configurer
+
+avis.
+
+Ce faisant, vous pourrez introduire un serveur de messagerie.
+
+Vous pouvez introduire un système de messagerie instantanée et décider essentiellement de la manière dont vos utilisateurs seront avertis.
+
+Évidemment, vous aurez besoin d'avoir un accès administrateur et Bambu et vous irez sur votre page d'administration
+
+ici.
+
+Et puis vous irez en haut de la communication, ce qui vous permettra de configurer le serveur de messagerie en cliquant
+
+sur le serveur de messagerie, vous aurez besoin d'un serveur SMTP avec un accès, un accès approprié.
+
+Vous pouvez utiliser votre serveur SMTP local, vous pouvez utiliser le service de messagerie simple de votre Amazon Web Services Se,
+
+ou vous pouvez utiliser un tiers pour ce cours.
+
+Normalement, pour tout ce qui est simple, j'utilise email git, qui est un très bon système.
+
+Magette sert essentiellement à envoyer des e-mails marketing, mais il vous permet également d'utiliser leur service FAI.
+
+Alors quand tu t'inscris à la Magette, tu vas sur un tableau de bord comme celui-ci et si tu cliques sur ton nom
+
+et puis tu vas sur mon compte.
+
+Il existe également un EMT et des paramètres d'API d'envoi, et ici, ils vous donneront le serveur présumé
+
+et le port et il vous donne également un nom d'utilisateur, qui est la clé API et le mot de passe, qui est le
+
+clef secrète.
+
+Donc, si je copie simplement le nom du serveur SMTP et que je retourne à Bambu.
+
+Pour le serveur présomptif, je peux utiliser cette adresse.
+
+Et aussi, de quoi ai-je besoin, j'ai besoin d'un nom d'utilisateur et d'un mot de passe.
+
+C'était donc mon nom d'utilisateur.
+
+En nom d'utilisateur et j'ai besoin de mon mot de passe, je le mets en mot de passe.
+
+Vous pouvez également décider d'utiliser SSL ou TSL vous indique si vous décidez d'utiliser SSL ou sans larme, il vous suffit de vérifier
+
+cela, utilisez moins.
+
+Et aussi, de quoi d'autre avons-nous besoin, nous avons besoin de l'adresse, de l'adresse sera utilisée pour envoyer les e-mails
+
+au nom de cette adresse.
+
+Et dans Magette, vous devrez introduire un e-mail.
+
+Donc, si vous cliquez sur leurs sénateurs et leurs demandes, si vous cliquez dessus, il y a une adresse de liste de diffusion,
+
+vous devrez cliquer sur Ajouter une adresse Ascender, en tapant votre propre e-mail ou une autre adresse e-mail valide,
+
+puis il vous enverra un lien de confirmation une fois que vous aurez cliqué sur le lien pour devenir actif sur le
+
+statut, vous voyez l'actif et vous pourrez ensuite utiliser cette adresse pour envoyer un e-mail avec
+
+Magette.
+
+Nous allons donc le mettre à partir de ceci à Bambu.
+
+Alors maintenant, nous sommes prêts, alors vous dites simplement non, votre bambou est configuré pour utiliser un SMTP.
+
+Encore une fois, je n'utilise Magette que pour enseigner essentiellement à des fins de production.
+
+Il est préférable d'utiliser un serveur de messagerie plus robuste, peut-être votre propre serveur de messagerie, pour des raisons de sécurité.
+
+Alors maintenant, l'e-mail est configuré maintenant si j'y vais.
+
+Dites mes projets, puis je choisis mon plan.
+
+Et j'ai modifié mon temps.
+
+Vous verrez que dans votre page de configuration de pan, il y a aussi un onglet de notification.
+
+Donc si je clique sur notification.
+
+Il vous permettra d'envoyer des notifications lorsque des choses se produisent dans votre plan.
+
+Cela me dit que la messagerie instantanée ou moi ou je suis n'est pas configurée, ce qui est juste.
+
+Nous ne l'avons pas fait.
+
+Mais le courrier électronique est confus, nous ne recevons donc aucune alerte concernant le courrier électronique.
+
+Et une fois que vous avez configuré au moins un serveur de messagerie ou une application de messagerie instantanée, cela ajoute une notification
+
+bouton apparaît ici.
+
+Et si vous cliquez dessus, vous pouvez choisir un même, par exemple, pour les motifs.
+
+Vous pouvez décider que lorsqu'une facture est terminée, lorsqu'un changement de statut de la facture se produit, par exemple, si
+
+Bill réussit, il vous envoie un e-mail.
+
+Si cela devient un échec, il vous envoie un e-mail.
+
+Et aussi, vous pouvez décider des offres échouées et d'abord, réussies, c'est comme lorsque vous êtes en phase et
+
+puis vous le réparez, puis une fois la première fois que vous avez terminé, il vous envoie un e-mail avec succès.
+
+Et après des échecs, par exemple, vous pouvez dire après trois échecs d'affilée, envoyez-moi un
+
+email donc je vais voir ce qui n'allait pas.
+
+Commentez que si quelqu'un ajoute un commentaire ou un changement de responsabilités, si les autorisations changent sur le
+
+au niveau du plan, vous pouvez également aller dans un plan et définir une notification sur les travaux similaires aux plans que vous pouvez
+
+dire quand tous les travaux sont terminés ou Bange, quand le statut des travaux change, ou encore quand il y a
+
+est une erreur dans un travail ou lorsqu'un travail se bloque ou lorsqu'un travail reste dans la file d'attente pendant une longue période.
+
+Normalement, les tâches peuvent rester dans une file d'attente lorsque vos agents de terrain sont trop occupés, ne répondent pas ou qu'ils se bloquent.
+
+ou ils ne peuvent pas s'authentifier auprès du serveur de votre bambou pour de nombreuses raisons.
+
+C'est pourquoi vous feriez mieux de recevoir une notification, puis d'aller voir quels sont les problèmes.
+
+Ainsi, par exemple, ici, nous choisissons l'événement comme lorsque toute la facture est terminée dans une casserole, puis
+
+nous disons, qui est le destinataire destinataire ?
+
+Et on peut dire développeur.
+
+Et puis si nous faisons cela, une fois que nous aurons lancé notre offre, il enverra un e-mail au développeur principal.
+
+Facile, puis vous pouvez ajouter plusieurs notifications pour différents.
+
+Construire des plans, par exemple, nous pouvons dire quand un travail a une erreur et encore l'envoyer, par exemple, au développeur.
+
+Vous pouvez également choisir un groupe au lieu d'un développeur et dire, par exemple, l'envoyer à Bambu Admin Group
+
+et puis tout le monde dans ce groupe va recevoir cet e-mail.
+
+Ou vous pouvez spécifier une certaine adresse e-mail ici, vous pouvez simplement saisir une adresse e-mail, je mets mon
+
+propre adresse e-mail ici et vous pouvez ensuite l'ajouter.
+
+Donc en fait, supprimons peut-être tout cela et ajoutons-en un autre, pouvons-nous dire.
+
+Lorsque tous les travaux sont terminés et que je les envoie à une adresse e-mail et que je mets ma propre adresse e-mail ici et
+
+Je clique sur AJOUTER, puis je vais lancer ceci.
+
+Et avant cela, passons aux agents, car je pense que je dois autoriser mon agent.
+
+Et je reviendrais ici et je lancerais cette offre, je devrais recevoir un e-mail une fois pour tous les emplois de mon offre
+
+pour sans succès.
+
+Cela va prendre une minute car l'agent doit se connecter.
+
+Et puis après, j'irai dans ma boite mail et ensuite je vous montrerai l'email que j'aurai reçu
+
+de bambou.
+
+OK, donc la construction s'est terminée avec succès.
+
+Et comme vous le voyez ici, il est indiqué sur le côté droit de l'écran qui a inclus dans le projet de plomberie
+
+et vous voyez que votre environnement Q8 est en cours devant lui.
+
+Et c'est parce que nous avons créé trois déclencheurs dans le sujet précédent.
+
+Exécuter le déploiement une fois, la construction et l'exécution avec succès, et c'est pourquoi le déploiement est maintenant
+
+passe aussi.
+
+C'était donc également un bon test pour notre déclencheur de déploiement.
+
+Donc c'est cool, et si nous attendons quelques minutes, ça passera au vert.
+
+Alors revenons à nos projets, ce que nous avons fait, c'est que nous avons exécuté notre plan et nous avons dit que cela envoie des notifications
+
+à cette adresse e-mail.
+
+Et Mangeot va le faire pour nous.
+
+C'est donc ma boîte aux lettres, et comme vous le voyez, le courrier est en fait allé dans mon dossier de courrier indésirable, mais ce n'est pas le cas.
+
+question.
+
+Ça dit ça.
+
+Il indique que le travail de comptabilité par défaut a réussi.
+
+C'est parce que nous avons ajouté un déclencheur au niveau du travail et nous avons dit que lorsqu'un travail réussit, envoyez
+
+la notification.
+
+C'est donc maintenant la notification.
+
+Si nous cliquons sur Voir, Bill, ça va nous emmener à Bambu et nous montrer la facture.
+
+C'est donc très rapide et très simple, et vous recevrez rapidement l'email si vous utilisez la fonction publique,
+
+comme mail jet ou tout autre service tiers, vous devez probablement vérifier vos dossiers de courrier indésirable pour
+
+avis.
+
+Vous pouvez également configurer.
+
+Dans la section admin, d'autres types d'IAM, mais dans le serveur IBM il.
+
+Prend en charge un type très spécifique de.
+
+La messagerie instantanée, qui est ex MP.
+
+Est pris en charge, nous n'allons donc pas l'utiliser pour l'instant lorsque vous êtes à votre niveau prévu, par exemple,
+
+si nous revenons à notre plan comptable.
+
+Et vous allez dans configurer le plan et dans la section de notification, lorsque vous ajoutez une notification, comme vous le voyez.
+
+Ici, vous pouvez décider quoi d'autre, à part le courrier électronique, vous pouvez faire.
+
+Vous pouvez envoyer des notifications à Hepcat si vous ne savez pas ce qu'est l'hépatite.
+
+C'est la messagerie instantanée pour les équipes.
+
+C'est que ce n'est pas en fait.
+
+Et au même produit, Atlassian a acheté ou acquis cette petite entreprise il y a quelques années.
+
+Alors maintenant, ce n'est pas le même produit, mais en même temps, je ne l'ai pas construit.
+
+Mais de toute façon, il charge.
+
+Un outil, c'est comme similaire à slike, mais pas aussi sophistiqué, c'est un outil de collaboration en équipe.
+
+Vous pouvez créer des salles et ensuite vous pouvez diriger le message, d'autres utilisateurs.
+
+Et donc si vous avez un chat branché, vous pouvez créer une salle, puis obtenir un jeton API pour votre graphique branché, mettre
+
+ici, tapez le nom de votre chambre.
+
+Et puis une fois que quelque chose se passe dans votre plan ou dans votre déploiement, des notifications seront envoyées à ce
+
+salle de discussion branchée.
+
+De plus, vous pouvez faire d'autres choses ici, par exemple, vous pouvez utiliser envoyer les e-mails aux committers ces
+
+sont ceux qui ont commis quelque chose au lit ou les veilleurs ou les utilisateurs responsables sont ceux qui
+
+ont réellement la permission de déployer ou de modifier.
+
+Ainsi, les personnes qui ont des utilisateurs auront la permission de modifier votre plan ou de déployer.
+
+Les projets de déploiement sont appelés utilisateurs responsables.
+
+Vous pouvez leur envoyer des e-mails.
+
+Donc, fondamentalement, vous pouvez envoyer des notifications à un utilisateur ou à un groupe spécifique que vous pouvez envoyer à Hepcat, vous pouvez
+
+envoyer à une adresse e-mail ou à des groupes spécifiques tels que les personnes qui peuvent déployer ou modifier, les personnes qui ont
+
+commis et les personnes qui ne font que regarder les observateurs sont des personnes qui vous ont accès à votre
+
+facture.
+
+C'est à propos des notifications et allons-y, puis plus sur Bambu dans le sujet suivant.
+

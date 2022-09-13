@@ -1,0 +1,63 @@
+All right.
+
+So we have the needed libraries and we should already be able to execute our unit tests using the development
+
+environment.
+
+And before we continue to our next lessons, let's quickly check if two unit does work in this project.
+
+So inside of the test folder, I will select our folder and will do right mouse click choose new in
+
+Java class and I will call this Java class demo test.
+
+I will add a demo test method.
+
+In the following lectures, I will explain in details how to create your new test.
+
+But for now, I will skip explanation and will simply around this one, just to demonstrate that we
+
+have successfully configured to unit test support.
+
+All right, so I will run unit test by clicking on this play button on the left side of my unit test
+
+method.
+
+And at work we have test report and I have green checkmarks indicating that test has passed.
+
+So it looks like the two unit is working in our project.
+
+Now let's try executing.
+
+This test meant that using gradle command in the terminal window to do that, that will click on the
+
+terminal button here at the bottom in my development environment to open terminal window and I will
+
+list files in the current directory to make sure that I am in the project home folder and I should be
+
+able to see the cradle w file and to execute test phase using cradle I will run the following command
+
+dot forward slash and then cradle in w space clean space test.
+
+This will clean the project will remove any leftovers from previous builds and will execute the test
+
+task.
+
+The test task will automatically detect and automatically execute all unit tests.
+
+All right, so I'll hit enter to run it.
+
+And it worked.
+
+They built a successful.
+
+And I have output from my unit test method.
+
+All right.
+
+So it looks like your unit is working and you now know how to add union support to your cradle base
+
+to our project.
+
+And you also know how to use credo to execute union tests.
+
+Let's continue.

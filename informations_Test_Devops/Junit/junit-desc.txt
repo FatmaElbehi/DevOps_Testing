@@ -1,0 +1,33 @@
+Now there are different ways to create a project, and there are different tools to build and manage
+
+dependencies in our project.
+
+Which one of these tools you use?
+
+I do not know, but there is a first class support for a unique platform that exists in popular ideas
+
+like Anthology, Eclipse, NetBeans and the Visual Studio Code.
+
+And there are many popular build tools that support G-Unit.
+
+Some of them are made in the cradle and and for example.
+
+So in this video, of course, I'll show you how to set up G unit in different types of projects.
+
+You will learn how to score them G-Unit and Maven and Gradle based Jammer project, and they'll show
+
+you how to create a new project and how to set up do union using popular development environments like
+
+anthology and equips.
+
+If you do not use Raven and Gradle, then you can simply skip those lessons until you need them in the
+
+future.
+
+In section of this course that teaches the basics of G in five, I'll show you how to create a Java
+
+project and also how to set up G unit without using any of these tools as well.
+
+All right.
+
+So let's continue.

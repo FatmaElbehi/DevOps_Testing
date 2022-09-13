@@ -1,0 +1,67 @@
+Nous voulons donc maintenant commencer à créer tous les services et objets dont nous avons besoin pour déployer nos artefacts
+
+à nos serveurs cibles à l'aide d'un WS appelé deploy.
+
+En regardant ce diagramme, nous avons besoin de trois choses principales.
+
+La première est que nous avons besoin de huit WS sous forme de trois compartiments afin que nous puissions copier l'artefact final sur ce S3
+
+baquet.
+
+L'artefact final, comme vous le voyez, si vous regardez le côté gauche de l'écran, va inclure le
+
+résultat de la construction du code source, c'est-à-dire que cette ligne qui continue devient finalement un fichier zip,
+
+ou cela devient juste comme un artefact et dépose également des scripts.
+
+Nous voulons donc fusionner le script et la sortie du projet, puis les mettre sous forme de fichier zip dans trois
+
+seaux.
+
+Nous allons donc créer un seau supplémentaire.
+
+Ensuite, nous devons aller créer un serveur Web.
+
+Ce serveur Web va héberger notre site Web NBC, que nous appelons comptabilité et création d'un serveur Web
+
+qui peut être utilisé par un double est appelé deploy, a une sorte de critère.
+
+Vous ne pouvez utiliser aucun serveur.
+
+Nous allons donc le faire comme un sujet séparé juste après avoir créé une histoire.
+
+Et puis enfin, nous allons créer un code, déployer l'application et la configuration.
+
+Et puis à partir de là, il est très facile d'utiliser du bambou pour déployer le produit final.
+
+Alors allons-y et créons un seau huit trois.
+
+Donc dans la console Amazon Web Services, je vais aller à trois services et ici je clique simplement sur Créer un
+
+Baquet.
+
+Le nom du compartiment doit être globalement unique et je choisis des minuscules.
+
+Je l'appelle couche et bambou.
+
+Et parce que je suis à Sydney, je viens de choisir la région Asie-Pacifique.
+
+Si vous êtes ailleurs, vous choisissez la région la plus proche de vous et vous pouvez cliquer sur suivant.
+
+Nous n'avons pas besoin de versionner ou d'aimer la journalisation ou quoi que ce soit, alors cliquez sur suivant et il n'a pas besoin de public.
+
+Accédez au clic suivant et créez un compartiment.
+
+C'est aussi simple que cela, alors maintenant vous avez un seau appelé lern bambou.
+
+Nous n'applaudissons rien ici nous-mêmes.
+
+Bamboo va compresser tous les artefacts des scripts comme je vais vous le montrer.
+
+Et puis il les télécharge simplement ici parce qu'ils pourraient se déployer.
+
+Doit lire le paquet de S3.
+
+Allons-y.
+
+Et maintenant, dans la rubrique suivante, créez un serveur Web.

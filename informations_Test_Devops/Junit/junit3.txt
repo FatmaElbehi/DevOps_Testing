@@ -1,0 +1,61 @@
+To test your application, you might want to write three different types of test code as illustrated
+
+in this pyramid.
+
+Notice that unit tests are at the bottom of the test pyramid, and this is because usually unit tests
+
+are written and run before another test code.
+
+So the first type of test code is unit test, and usually you will write a lot more unit tests for application
+
+than any other tests.
+
+When Orion test code unit tests are also the fastest among these three.
+
+This is because units do not need to connect to a database and they do not need to send that UDP request
+
+over the network and wait for a response.
+
+The next type of test code that you might want to write is called Integration Test, and these test
+
+methods are very similar to unit tests, except that in this case you will not use mock and you will
+
+not use fake objects instead of real objects.
+
+The method you are testing will actually send the ship request if it needs to, or it will actually
+
+write into a database if it needs to.
+
+And in this case, if you need as deep pass, then you are confident that the method you were testing
+
+will work well when it is integrated with other external systems.
+
+All right.
+
+So in case of integration tests, if your method needs to load data from a database or if your test
+
+method needs to send be request to fetch data from any more server, you will not use fake objects anymore,
+
+but you will actually let your function use a real database connection or send a real active request
+
+and work with a real cheap response that it gets from the server.
+
+Integration tests runs slower than unit tests because they need to communicate with other internal or
+
+external systems.
+
+The next level of testing that you will do is automated end to end testing.
+
+When doing end to end testing, you will their software functionality from beginning to end.
+
+If you a building mobile application, for example, or a web page, then you might want to write automated
+
+UI tests.
+
+These tests will test functionality of your application by actually invoking button clicks and evaluating
+
+if that button click did produce unexpected results.
+
+So automated end to end tests are even slower, and the number of end to end tests that we create will
+
+be a lot less than the number of unit tests.

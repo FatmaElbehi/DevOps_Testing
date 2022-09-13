@@ -1,0 +1,35 @@
+f you've been following along with a course, we set up a multipronged pipeline and we thought the
+
+simple job and Maven app repo, what are we going to do is go inside Jenkins folder?
+
+When she was Jenkins fall.
+
+What I'm going to do is click on rule.
+
+Copy everything.
+
+Let's go back, back again and back again.
+
+And inside here, I'm going to create a new foil.
+
+I'm going to call it test Dalts Jenkins, vital piece in the contents.
+
+And again, we're going to push this directly to a master branch so this may actually trigger a new
+
+job.
+
+But the key thing to note here is that we all going to have to jenkins' files.
+
+But as far as Jenkins is concerned, it's still going to appoint sort of one inside the Jenkins folder.
+
+We have to explicitly say which one to use.
+
+And that's why we can have multiple Jenkins files inside, not committee.
+
+This will say added new Jenkins file.
+
+And let's submit the file.
+
+Awesome.
+
+And we can see it there.

@@ -1,0 +1,28 @@
+In previous lessons, I showed you how to configure your unit in a Maven based project and in a grid
+
+or base project as well.
+
+In the following two lessons, I'll show you how to create a new unit test method in a basic Java project
+
+that does not use a maven or gradle.
+
+Now different developers use different development environments to write Java code and I will not be
+
+able to use all of them in this course.
+
+For this course I will mainly use intuitive development environment.
+
+But just in case you're using another very popular development environment that is called Eclipse,
+
+I'll show you how to create a new unit test in Eclipse IDE as well.
+
+Unit Testing & Integration Testing of Java and Spring Boot applications.
+Note : 4,8 sur 1
+4,8
+26 notes
+273
+Participants
+6,5 heures
+Total 
+Dernière mise à jour juillet 2022
+Anglais

@@ -1,0 +1,522 @@
+Dans ce sujet, nous voulons voir comment nous pouvons transformer notre Web dotcom, car, comme vous le savez, dans
+
+n'importe quel a de net ou de démarrage, cette application NBC, il y a des frais Web dot com, qui incluent la configuration
+
+de notre programme, et il contient des fichiers de transformation, tels que le Web, le débogueur dot, dot com fake
+
+et Web qui a publié sur les pieds dotcom.
+
+Et si je construis mon application et que je la publie, plus elle utilisera le Web et la configuration débarquera.
+
+Et si je publie mon application dans un mode de publication comme celui-ci, elle va utiliser le Web qui libère
+
+cette configuration.
+
+Mais il ne va pas seulement utiliser ce fichier car il va les fusionner.
+
+Voici donc la structure de notre flux Web.com et c'est là que la configuration a été publiée et, comme vous le voyez, les balises,
+
+certains de ces éléments, ils ont des transformations.
+
+Et comme vous le voyez, ces éléments ont des transformations afin que vous puissiez transformer des éléments externes dans différents
+
+façons.
+
+Et pour transformer un fichier de configuration en une configuration de transformation, vous devez disposer de cet espace de noms XML
+
+exacty, puis cet espace de noms en haut de votre élément de configuration.
+
+Pourquoi devons-nous faire pour la transformation des fichiers de configuration ?
+
+Parce que nous allons compiler et packager ce site Web, mais ensuite nous allons déployer le même package
+
+dans deux environnements différents.
+
+Par exemple, une fois que j'ai terminé mon travail, je peux simplement vérifier mon code, puis le générer, puis le déployer
+
+cela à mon environnement sandbox.
+
+Et puis une fois que je suis sûr que tout va bien, je peux le déployer dans notre environnement de test afin que les testeurs puissent tester.
+
+Et une fois que les testeurs disent que c'est parfait, alors nous pouvons déployer exactement le même package dans l'environnement de production.
+
+Nous allons donc construire un package et être déployé plusieurs fois et juste avant de déployer votre package
+
+à un environnement, vous saurez que comme quel fichier de configuration sera requis car l'API
+
+vous êtes, car la connexion avec les chaînes peut être différente.
+
+Tous les paramètres peuvent être différents d'un environnement à l'autre.
+
+C'est pourquoi nous avons besoin de fonds de transformation.
+
+Mais debug et release ne sont pas vraiment de bons noms et une bonne sorte de distinction entre les deux.
+
+Ils étaient confus parce que nous voulons en avoir un pour la transformation des conflits, cinq par environnement, pas
+
+tout comme un dbag et une version, je vais quand même créer mon site Web en tant que version.
+
+Donc, j'utilise toujours ceci dans ce cas, et je n'aurai pas de fichier de transformation, cinq par
+
+environnement.
+
+Donc ça ne va pas marcher pour moi.
+
+Il est préférable d'avoir un fichier de transformation par environnement.
+
+Et pour ce faire, le moyen le plus simple est d'aller dans notre dossier de projet, puis de copier.
+
+Que ce conflit et ensuite nous l'avons passé et ensuite nous le renommerons simplement en ce point Web, imaginez que
+
+nous avons un environnement Kuai ou testi et cela peut devenir Web dot kuai.
+
+Et puis je peux copier-coller ceci et je peux le transformer en configuration de point de production Web et de points.
+
+Article intéressant.
+
+Et nous allons faire ces deux financements.
+
+Ces deux.
+
+Alors maintenant, nous devons trouver ajouté, je vais vous montrer comment vous pouvez déplacer ces configurations de production Web et
+
+web que Kuai relève de Web.com.
+
+Ils ressembleraient donc à une configuration de version candidate au débogage Web avant cela.
+
+Je dois également vous montrer le package Newgate que vous devez installer.
+
+Sinon, vous ne pouvez pas faire une transformation complète.
+
+Et la raison en est que, comme je l'ai déjà dit, lorsque vous publiez avec Visual Studio, Visual Studio,
+
+fait la transformation du conflit pour vous.
+
+Mais Mouthfeel n'a pas cette fonctionnalité.
+
+Il n'a pas cette capacité.
+
+Donc, si nous compilons et déployons avec des dépenses incorrectes, nous ne pouvons pas faire de transformation de conflit.
+
+C'est seulement le studio visuel qui fait cette transformation complète pour nous.
+
+Alors, comment pouvons-nous ajouter cette capacité à MSBA ?
+
+C'est ce que nous allons apprendre dans cette conférence.
+
+Et pour pouvoir faire une transformation complète, nous devons utiliser l'une des bibliothèques de Visual
+
+Studio, qui est heureusement disponible sur vous et c'est MSK build que Microsoft Visual Studio
+
+je dois porter ces cibles.
+
+Donc, vous n'avez qu'à aller à votre solution, à droite.
+
+Cliquez et accédez à et vous obtenez la fenêtre de gestion des packages recherchez la construction de la souris Microsoft, ce studio visuel
+
+c'étaient les cibles.
+
+Une fois que vous faites cela, vous pouvez voir plusieurs versions de ceci et essayer de choisir la dernière version, qui
+
+n'est pas la dernière, comme la version la plus récente, qui est de deux mille 16.
+
+Et vous l'installez puis vérifiez votre code, poussez-le vers le contrôle de source et nous devrons ensuite
+
+charge ce fichier.
+
+Et à une vitesse de souris, nous pouvons charger ce fichier et ensuite utiliser ses capacités de transformation.
+
+Alors, comment faisons-nous cela?
+
+Nous devons éditer notre projet en avant afin de pouvoir d'abord les déplacer vers une nouvelle transformation de conflit
+
+fichiers sur le Web, cette configuration, et également être capable de faire la transformation complète.
+
+Avant cela, nous devons créer une sorte de transformation dans nos fichiers de transformation.
+
+Ainsi, une fois que nous déployons notre package ou le construisons, nous verrons que la transformation s'est produite.
+
+Nous allons donc sur Web.com Fagone dans les paramètres.
+
+Je vais ajouter une clé, quelque chose comme, par exemple, up disons environnement, environnement puis valeur
+
+est local ici.
+
+Et je peux avoir exactement la même chose
+
+élément dans.
+
+Web dot a créé la configuration, mais à ce moment-là, ce sera au lieu de Kuai local, mais alors vous
+
+dois mentionner que cela nécessite une transformation ou aucune transformation ne sera appliquée à cela.
+
+Et pour faire une transformation, il faut dire que c'est et tendu.
+
+Tellement similaire à ce que vous voyez ici.
+
+Transformer équivaut à s'asseoir.
+
+Et.
+
+Aussi, nous pouvons dire que Xed.
+
+Le localisateur est beaucoup avec la clé, cela signifie que vous devez vérifier la propriété de la clé et si la clé correspond
+
+tu fais la transformation, ça dit que je ne comprends pas cette clé.
+
+C'est parce que c'est simple et c'est là-dedans.
+
+Vous devez copier ceci, le mettre en haut de notre configuration comme ceci.
+
+Et après cela, cette erreur va disparaître.
+
+Nous avons donc besoin de cet espace de noms XML au-dessus de notre environnement de production, ainsi que du pays.
+
+Et je vais copier cet élément XML, l'élément bouleversant que nous avons ajouté.
+
+Et donc ici dit attributs.
+
+Tu devrais dire ça.
+
+Et puis nous entrons ici et la publicité est là aussi, donc ça va se transformer en une production qui
+
+devrait être bon.
+
+Et après cela, nous voulons déplacer ces deux fichiers sur la vraie config.
+
+Pour ce faire, nous devons modifier le projet, trouver que vous pouvez ouvrir le projet juste en dehors de Visual Studio.
+
+Il vaut mieux que nous le fassions à l'intérieur du studio pour que vous puissiez décharger votre projet.
+
+Une fois le projet déchargé, vous cliquez sur chaque projet et il y en a plusieurs ici.
+
+Vous devez trouver votre.
+
+Configuration de production de canard Web.com.
+
+Trouvons-les, puis amenons-les au sommet afin que nous ayons.
+
+Ces deux disques, et puis nous les ramenons quand ils ont cette configuration religieuse et nous l'avons.
+
+Deba comfit sont ce ne sont pas nous les transformons en contenu, donc c'est leur contenu et c'est un contenu
+
+et nous les transformons en un élément en deux parties.
+
+Et puis ici, vous pouvez dire dépendant et ensuite travailler sur cette configuration et tout ce que vous devez faire pour le
+
+l'autre est.
+
+Cela aussi.
+
+C'est donc du contenu et ici, le jeu, vous dites dépendant du.
+
+Maintenant, si je reviens en arrière et recharge mon projet.
+
+Et ouvrez l'explorateur de solutions, vous verrez que toutes les transformations sont sous mes pieds Web.com,
+
+ce qui est cool parce que c'est là que nous voulons qu'ils soient et maintenant nous devons commencer à travailler sur la transformation
+
+battre.
+
+Nous devons faire la transformation d'une manière telle qu'une fois qu'un champ est terminé et qu'il a fait tout ce que nous pouvons
+
+faire, la transformation et la copie pour transformer les fichiers de configuration dans le dossier de destination, comme où
+
+nous voulons éventuellement que MSP publie tout ce qui est réellement spécifié dans ce fichier, le fichier publié
+
+profil que nous avons créé ici.
+
+Nous avons donc un chemin ici qui est comme, voir cette sortie construite et ensuite le nom du projet, nous voulons
+
+pour effectuer la transformation et copier les fichiers de transformation directement à cet emplacement.
+
+Nous devons donc décharger à nouveau le projet et le modifier.
+
+Et commencer à faire le travail, donc pour faire le travail.
+
+Une chose que nous devons faire est que nous devons créer un sous-dossier similaire à l'intérieur du dossier de destination, puis
+
+copiez les fichiers de configuration dans ce dossier.
+
+Et nous faisons tous ces bacs personnalisés dans cette cible, qui est appelée après l'enchère.
+
+Ne changez pas ce nom.
+
+Ce nom est connu pour MSP et faites donc tout le travail que vous voulez faire à l'intérieur après avoir été le premier.
+
+Donc, ce que je vais faire ici, c'est créer un dossier.
+
+Annuaire.
+
+Je ne peux copier que les cinq Transformés dans l'OTAN.
+
+Nous partons de ce dossier, trouvons une trouvaille transformée.
+
+Faire un répertoire est comme super facile.
+
+Tout ce que vous avez à faire est de faire une sorte de tâche et vous avez alors une propriété.
+
+C'est ce qu'on appelle les répertoires.
+
+Et il te fait ce que tu veux avoir s'appelle, par exemple, transformé.
+
+Je ne peux pas réparer quelque chose comme ça, n'est-ce pas, et.
+
+Cela dit, vous pouvez également avoir une condition telle que créer uniquement ce dossier, s'il n'existe pas.
+
+Maladie et puis le même nom de dossier, mais je sais que cela n'existera pas parce que quand je suis un public
+
+profil, j'ai dit que supprimer tout dans le dossier, puis publier à nouveau tous les fichiers.
+
+Le dossier sera donc vide de toute façon.
+
+Ce dossier ne sera pas là.
+
+Je n'ai donc pas besoin de vérifier.
+
+Et aussi maintenant, si je le laisse tel quel, il va créer ce dossier dans mon dossier de projet,
+
+alors que je veux que ce soit dans le dossier de destination où tout va être publié.
+
+Il existe une sorte de variable non documentée que vous pouvez utiliser.
+
+Afin de trouver ce dossier et ce n'est pas notre chemin qui est publié, vous êtes un.
+
+Ça va dire que je ne sais pas ce que c'est, mais ça marchera.
+
+Alors en faisant ça, que va-t-il se passer ?
+
+Il va créer un répertoire appelé transformer les conflits sous tout ce que vous appelez vos fichiers,
+
+qui va être C, générer des sorties, puis un dossier de comptabilité.
+
+Et après cela, nous devons transformer les fichiers de configuration, mais nous devons charger les fichiers d'une cible Web
+
+car.
+
+Nous l'avons obtenu de vous, c'est sur les paquets et ensuite nous devons trouver les cibles ici, et ensuite il
+
+est dans Visual Studio Path Web de l'outil et c'est ici, les tâches de publication Web Microsoft.
+
+Je dois donc charger ce fichier.
+
+Fondamentalement, cet accord dans MSBA et nous chargeons le téléphone en utilisant TASC.
+
+Nous avons donc un utilisant TASC.
+
+C'est similaire à l'utilisation de Doxie Sharpes, puis nous disons le nom Pask et nous lui donnons un nom, par exemple,
+
+Transformez XML.
+
+Et puis nous avons besoin d'assemblage.
+
+C'est le fichier que vous allez charger et fermer la balise afin que vous n'obteniez pas d'erreurs.
+
+Et je veux dire allez dans le dossier packages, puis lisez ceci.
+
+Alors là où se trouve la solution, elle est en solution.
+
+Mais c'est là que se trouve votre fichier de solution, qui est à la racine ici.
+
+C'est donc là que se trouve la solution.
+
+Et j'ai besoin de tout après ça.
+
+Alors je le copie d'ici.
+
+La solution I r, je pense, a une barre oblique inverse.
+
+Ou peut-être pas, on peut essayer, on peut voir ce qui se passe et après, je ne pense pas que ce soit le cas.
+
+Je ne pense pas qu'une solution ait la réglementation commerciale.
+
+Et puis après cela, ce dont nous avons besoin, c'est du nom du fonds de transaction, qui est.
+
+Ce que nous publions, nous le copions simplement à partir d'Explorer et nous le collons ici.
+
+J'ai donc juste copié le chemin et que le nom par rapport à l'endroit où se trouve ma solution et maintenant nous pouvons charger le
+
+fichier de transaction.
+
+Maintenant, nous voulons dire que comme tout le pour tous les environnements à travers la transformation pour dire
+
+les anciens environnements, nous devons utiliser une fonctionnalité de MSBA, le code batching afin que vous puissiez faire différents
+
+façons de faire correspondre que vous pouvez faire la correspondance de tâches ou la correspondance de contenu.
+
+Et une façon de le faire est de rechercher vos groupes d'articles et à la fin d'ajouter un autre groupe d'articles
+
+et donnez-lui un nom pour que nous puissions dire groupe d'articles.
+
+Ensuite, ici, vous pouvez donner le nom que vous voulez, par exemple, je dirais dans un bar ou un environnement.
+
+Et.
+
+Cela vient de se transformer en ceci et nous pouvons dire que l'inclusion est juste de lui donner un nom, donc l'un d'eux était Kuai le
+
+l'environnement que nous avions et un autre que nous avons est la production.
+
+Il n'est donc pas nécessaire qu'il s'agisse de fonds réels.
+
+Oui, maintenant, si je me réfère simplement au nom de ces éléments tels qu'ils sont avec le pourcentage plutôt qu'un
+
+signe dollar, donc comme les variables commencent par le signe dollar, comme vous le voyez ici.
+
+Je mets donc juste en évidence cette variable B quant à ce chemin, c'est une valeur.
+
+Mais si vous commencez par un pourcentage, cela signifie autre chose.
+
+Donc, si je dis des environnements de pourcentage, cela va faire référence à ce groupe d'éléments, puis à l'individu
+
+éléments dont j'ai besoin pour dire l'identité du point et ensuite il va m'en donner un.
+
+Mais Misspend sait que vous utilisez Batching, il va donc examiner chaque contenu
+
+que vous avez ici.
+
+Donc faire la transformation une fois pour cette ligne et ensuite la faire une fois pour cette ligne aussi.
+
+Donc, après avoir utilisé Pask, nous allons en écrire un autre.
+
+Target pour faire la transformation, donc je vais dire Target et ils lui donnent un nom, quel qu'il soit,
+
+par exemple, Config Transformation.
+
+Et puis, lorsque cela devrait se produire, cela ne devrait se produire que lorsque le répertoire ici est déjà construit.
+
+Nous devrions donc dire qu'après les objectifs, ce qui signifie qu'après quel objectif est atteint, nous devrions donner
+
+le nom de la cible qui crée le dossier.
+
+C'est donc après le.
+
+Et puis après cela, nous devons divulguer cela et faire une autre tâche, ce qui est une chance pour et et et et
+
+alors la source est quel fichier voulons-nous transformer ce pays?
+
+Et puis nous disons, quelle est la transformation ou la transformation de ce que c'est un point Web quelque chose entre les deux
+
+et dans ce pays ?
+
+Et puis, qu'est-ce que quelque chose entre ce truc de lot que j'ai mentionné, nous devons utiliser le pourcentage
+
+pour.
+
+Et le nom était l'identité des environnements dot.
+
+Et c'est tout, et le suivant est qu'une fois que vous avez fait la transformation là où elle est, vous devriez copier
+
+la partie.
+
+Je devrais dire destination, puis nous lui donnons une valeur aussi proche de celle-ci, nous voulons donc obtenir des erreurs.
+
+Et ici, on peut dire.
+
+La destination est où voulons-nous le mettre, nous voulons le mettre probablement dans votre L c'est où
+
+tout est copié dans la barre oblique inverse, puis quel était le répertoire que nous créions transformer config.
+
+Nous mettons donc cela ici aussi.
+
+Et puis que voulons-nous avoir comme nom de fichier ?
+
+Encore une fois, nous avons des environnements de pourcentage qui identifient.
+
+Ça peut être ça, ça devrait être bien, donc nous avons sauvegardé un je viens de le sauvegarder et nous rechargeons, assurez-vous que
+
+nous n'avons pas endommagé un projet, nous devons donc le charger.
+
+Et ça va prouver que tout va bien.
+
+Ouais.
+
+Nous avons donc construit le jeu.
+
+Alors maintenant, ce que je vais faire, c'est que je vais porter sur mes trouvailles NBC si j'ai mappé ce dossier
+
+à un code de conduite car il est plus facile à voir.
+
+Et comme vous me voyez et trouvez, ma solution est là et ça s'appelle comptabilité, SLN et je vais maintenant
+
+pour le construire en utilisant MSBA.
+
+Nous n'avons pas vraiment besoin d'aller à Bambu et de le construire car nous utilisons du MSBA en bambou afin que nous puissions utiliser un énorme
+
+construire ici.
+
+Donc je vais utiliser ma vitesse et puis il faut toujours fournir sur la grille et je peux dire debug ou
+
+release, puis je vais dire que ma plate-forme est n'importe quel CPU et que vous devez fournir un profil public.
+
+Alors on va dire que le profil public est comptable que public simple.
+
+Et chaque fois que vous fournissez le profil public, vous devez dire déployer sur.
+
+La même chose est vraie.
+
+Et si je lance ça.
+
+Je dois utiliser Ekwall, pas Cullin, alors on y retourne.
+
+Cela devrait être cool.
+
+Alors maintenant, il va construire le site Web.
+
+Donc dans le profil publié, on dit qu'il faut copier les fichiers pour voir la sortie puis la comptabilité
+
+et comme vous le voyez, il a tout construit.
+
+Il a publié le site Web ici.
+
+Et il y a un dossier, le deuxième en partant du bas, celui-ci transform config.
+
+C'est le dossier que nous voulons créer car nous avons édité le projet, trouvé le fichier du projet et
+
+nous avons dit, papa, crée un dossier, puis transforme la configuration et copie la configuration dedans.
+
+Et si j'y vais.
+
+Il y a pour transformer le confort d'ici et ou le post-déploiement en script récupérera ces fichiers en fonction
+
+sur quel environnement vous déployez, puis nous le recopierons sur le fichier de configuration Web après l'installation.
+
+Peu importe si vous utilisez AW deploy si vous utilisez d'autres outils pour déployer, tels que Tomcat deployer,
+
+si vous utilisez d'autres outils tiers, si vous écrivez vos propres scripts à déployer, cela n'a pas d'importance
+
+chaque fois que vous déployez ce package.
+
+Vous devez copier la configuration appropriée, transformer les fichiers de configuration au-dessus de Web.com.
+
+Nous avons transformé les configurations.
+
+Avant, c'est l'artefact qui a été généré à l'aide de bambou et comme vous le voyez, il s'est transformé
+
+config, il est là et il a toujours été créé.
+
+Je ne l'ai juste pas expliqué avant.
+
+C'est pourquoi nous ne savions pas qu'il était là.
+
+Mais c'est déjà là.
+
+Et nous pouvons toujours utiliser un script, comme je l'ai déjà dit, pour copier la police de configuration appropriée dans Web.com pour
+
+trouve.
+
+Il existe également un autre moyen de transformer les fichiers de configuration, qui utilise de l'énergie.
+
+Et vous pouvez aussi le faire.
+
+Ça dépend.
+
+Il existe de nombreuses façons différentes de le faire.
+
+Ce n'est qu'un moyen et c'est de cette façon qui est assez facile et compréhensible pour les développeurs.
+
+C'est pourquoi j'ai choisi cette façon de transformer les conflits.
+
+J'espère que cela vous a plu et que vous pouvez maintenant terminer un projet et le déployer dans votre vrai
+
+environnement en utilisant les choses que je vous ai enseignées jusqu'à présent.
+

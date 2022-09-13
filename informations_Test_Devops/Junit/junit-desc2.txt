@@ -1,0 +1,140 @@
+Now in previous lesson, we've added the needs of MAVEN dependency and we were able to execute our test
+
+using our development environment.
+
+However, it is not always that we need to execute unit test using development environment.
+
+Sometimes we need our unit tests to be executed when we build our project using MAVEN.
+
+Let me show you what I mean.
+
+So if I open a terminal window by clicking on this button terminal and at least files to make sure that
+
+I'm in the right directorate, I need to be able to see SML file.
+
+So I'm in the home directory of my project.
+
+So if I want to build or package my project using Maven, I will run the following command maven space
+
+package and then hit enter.
+
+And this will compile and package my project into a jar file.
+
+And now they both are successful.
+
+But notice that even though the build is successful, there are zero tests that get executed.
+
+Now I can also run maven command to execute test phases separately.
+
+Let's see if this works.
+
+So the command is may one space and then test and hit enter.
+
+And again, even though the build is successful, there are zero tests executed.
+
+So Tony, will our application execute unit tests during in the MAVEN build lifecycle?
+
+We need to add a plug in to pull maximum file.
+
+So I will call the terminal window and I will go back to pull maximum file and right before the project
+
+element ends.
+
+So right after dependencies, I will add a new section that is called built.
+
+Like this.
+
+And inside of this build section, I will add plugins section.
+
+Like this.
+
+And inside of plug ins section.
+
+I will add a plug in.
+
+The plugin is called Sure Fire, and you can look for it in the Maven repository as well.
+
+So I will go back to my browser window and I will open me one repository dot com.
+
+Let's go to its home page.
+
+So it's Maven repository dotcom and then using this search bar at the top, I will search for Maven
+
+a sure fire plug in and click on Search Button.
+
+So the very first option at the top is what we need.
+
+Maven Sure.
+
+Fire a plug in.
+
+So I will click on it.
+
+I will select the latest version and from the Maven tab I will copy it.
+
+Not the entire dependency, but its MAVEN coordinates only.
+
+So I'll copy group any artifact.
+
+The end version I will copy and will go back to my homework sample file and paste it here.
+
+Now, because I have made changes to my following simple file, I will need to reload my Maven project
+
+so that anyone can face this dependency and make it available in my project.
+
+To do that, I will click on this button which is in the top right corner, or just like I did in my
+
+previous videos.
+
+And I can do right mouse click on my project or on public sample file and then choose Maven Reload Project.
+
+And now I should be able to execute my unit test using medium and command as well.
+
+Let's try.
+
+I will open terminal window again and in the terminal window I will run maven space package and hit
+
+enter.
+
+Now they built a successful.
+
+And this time I have one unit to execute it.
+
+I can also execute my unit tests by invoking the test phase.
+
+To do that, I will use maven, command maven, space test and hit enter.
+
+And they built a successful again.
+
+They have won a unit test that was successful.
+
+Execute it.
+
+All right.
+
+And just in case you need to build or package your project, but you do not want your new test to be
+
+executed.
+
+You can do it this way.
+
+Maven and then space package dash.
+
+Capital D and then continue without any spaces.
+
+Maven dot test.
+
+That's.
+
+Keep equals.
+
+Through this will package your product, but it will not execute any tests.
+
+Let's try.
+
+Now the building is successful, but there are no tests that were executed.
+
+All right.
+
+So it all works well and we're good to contain.
+

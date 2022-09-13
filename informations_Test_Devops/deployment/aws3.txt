@@ -1,0 +1,162 @@
+Alors maintenant, nous voulons créer un serveur Web qui peut être utilisé par un double déployé.
+
+Ainsi, lorsque nous créons un serveur Web en tant qu'instance facile, il ne peut pas être utilisé par un déploiement possible à moins que vous ne
+
+créez et attribuez-lui un rôle spécifique ou un profil instantané avec certains critères.
+
+Je l'ai déjà dans Iame Identity and Access Management Service car je l'ai utilisé dans mon autre
+
+des cours comme le Team City Course.
+
+Donc, si je vais au rôle, il y a un client de code déployé à intégrer ici, qui si je clique dessus, vous
+
+verra qu'il a trois accès en lecture seule dont il a besoin comme trois accès en lecture seule car il veut
+
+pour télécharger notre artefact et il dispose d'un accès de déploiement de code, de déploiement et de déploiement de code.
+
+Et aussi parce que vous voulez accorder, comme, attribuer ce rôle à votre serveur Web et accorder tous les
+
+autorisations sur votre serveur Web, vous devez modifier la relation d'approbation et vous assurer que vous avez
+
+changé la valeur par défaut, qui est juste Ekta Amazon dot com et vous avez ajouté le code, déployez Amazon
+
+dot com, déployez également le code dot votre région, dot Amazon dot com.
+
+Assurez-vous que vous avez ajouté le code déployé sur Amazon point com et que vous pouvez déployer dot votre région dot Amazon
+
+point com à la relation de confiance dans la section services.
+
+Parce qu'en utilisant ces rôles et la relation de confiance, la machine qui est le serveur web va
+
+pour travailler en votre nom et communiquer avec eux et déployer le service.
+
+Assurez-vous donc d'avoir trois accès.
+
+Et aussi, vous avez.
+
+Pourrait se déployer, j'ai peut-être un peu trop d'accès ici, vous avez limité l'endroit dont vous aviez besoin pour votre
+
+capacité de production, vous avez donc besoin d'un rôle je suis, qui pour moi s'appelle, devis, déployer un client.
+
+Maintenant, nous allons passer à deux et nous créons une instance, l'instance que vous créez.
+
+Peut être de n'importe quel type, cela peut être Windows, cela peut être Linux, tout ce qui fonctionne pour vous.
+
+J'ai une image que j'ai créée sur la base de l'image de base de Windows 2000 16.
+
+La seule différence est que Google Chrome est installé dessus.
+
+Si vous avez regardé mes autres cours, vous savez que la première chose que je fais lorsque je crée une machine Windows
+
+installe du chrome dessus.
+
+Donc, nous sélectionnons simplement ceci.
+
+Et parce que cette machine Windows ne va pas partir avant longtemps, je ne l'utilise que pour ce sujet.
+
+Je vais choisir une machine plus grosse comme T medium.
+
+Car trop petit et au micro ou assez petit, lent quand on utilise windows.
+
+Donc après cela, nous allons configurer, par exemple, les détails avant d'oublier la première chose que nous faisons est
+
+pour attribuer du code, déployer le rôle client, le rôle que je viens de vous montrer à cette instance.
+
+Si vous ne le faites pas ou si le rôle que vous attribuez n'a pas d'accès S3 et de déploiement de code, déployez
+
+votre accès et vous avez des relations de confiance, votre déploiement dans le déploiement de code tiendra juste.
+
+Cela continue pour toujours.
+
+Vous devez donc vous assurer que vous avez attribué un rôle approprié à cette machine.
+
+Et je veux une adresse IP publique parce que je veux accéder à cette machine à distance depuis ma machine locale.
+
+Et après cela, vous devez également ajouter des groupes de sécurité.
+
+Ajoutons un stockage, et avant d'ajouter des groupes de sécurité, nous pouvons lui donner un nom, par exemple, nous pouvons
+
+dire.
+
+Serveur Web.
+
+Et nous lui donnons un autre tag La raison pour laquelle nous donnons un autre tag est que vous voulez vos serveurs individuels
+
+avoir des noms uniques.
+
+Donc, si vous avez deux de ces serveurs, vous pouvez avoir un serveur Web, A puis un serveur Web B, mais
+
+Ensuite, nous voulons également regrouper nos serveurs Web en fonction de l'application que nous avons déployée sur eux.
+
+Par ce regroupement, nous pouvons être appelés deploy pour déployer l'application sur l'ensemble du groupe.
+
+C'est pourquoi nous avons besoin d'une autre attaque.
+
+Par exemple, nous pouvons utiliser un journal de balises, une application, un service d'application, quelque chose comme ça.
+
+Je vais donc appeler cela et je l'appelle la comptabilité.
+
+Il y a une comptabilité o'collins, c'est que je vais utiliser quelque chose qui s'appelle la conception par contrat, et
+
+cela signifie que nous voulons utiliser le nom de l'application partout.
+
+Ainsi, lorsque nous nous référons à une application, nous utilisons la comptabilité et ensuite nous nous référons aux environnements.
+
+Nous voulons utiliser le même nom.
+
+Par exemple, à Bambu, lorsque nous avons déployé l'environnement Kuai dans le code, nous devrons inviter Kuai
+
+Environnement aussi.
+
+Nous le verrons lorsque je créerai le code, déploierai des choses.
+
+Assurez-vous donc que vos serveurs sont correctement étiquetés, puis nous passons au groupe de sécurité.
+
+Évidemment, j'ai besoin de notre DP car je vais me connecter à distance au serveur et installer Iooss, installer
+
+quelques dizaines chez NBC et évidemment j'ai besoin d'installer l'agent, l'agent de déploiement de code car on veut
+
+pour voir le site Web que nous allons installer.
+
+Nous avons besoin de HTP et je n'ai pas besoin d'IPV six.
+
+Encore une fois, si vous appelez, vous configurez le serveur pour une utilisation en production, assurez-vous de limiter
+
+les adresses IP.
+
+Et nous allons également, comme je l'ai déjà dit, déployés sur AW en tant que code de déploiement d'agents sur cette machine.
+
+Cet agent est un service Windows et il va communiquer avec le service de déploiement de code.
+
+Et la façon dont ces deux-là communiquent ensemble se fait via le protocole https sur le port par défaut pour trois.
+
+Assurez-vous donc d'ajouter https également.
+
+Encore une fois, si vous n'ajoutez pas de port, ce qui va se passer, c'est que lorsque vous déployez votre code, déployez le déploiement
+
+restera dans l'état de progression pour toujours.
+
+Ça tiendra.
+
+Assurez-vous donc d'avoir des conseils pour la communication entre le code, l'agent de déploiement et le service de déploiement
+
+puis passez en revue et lancez.
+
+Cela va prendre quelques minutes pour que le serveur soit opérationnel.
+
+En attendant, ce que nous pouvons faire, c'est passer au sujet suivant, créer l'appel, déployer des configurations,
+
+puis je me connecterai au serveur et installerai IRS et dot net.
+
+Mais je ne vais pas l'enregistrer parce que c'est quelque chose que vous pouvez déjà faire et dont vous n'avez pas besoin
+
+de perdre votre temps là-dessus.
+
+Et puis je vais vous montrer comment installer l'agent de déploiement de code.
+
+Continuous Integration and Delivery (CI/CD) with Bamboo for Devops and Developers
+Note : 4,5 sur 1
+4,5
+1 242 notes
+8 210
+Participants

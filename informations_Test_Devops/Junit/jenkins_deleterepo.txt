@@ -1,0 +1,27 @@
+Hi, and welcome to this video as we reach Vienna, because it's a good idea to clear down our environment.
+
+And one optional thing you can do is delete the Forks repo from GitHub.
+
+I'm going to keep mine up so you can use the code and check it for comparison because you want to do
+
+that.
+
+Let's have a look now once on GitHub.
+
+Let's click on our simple Java Maven app.
+
+And if we want to delete it, let's go to settings.
+
+And if we scroll down all the way to the bottom, we have delete this repository, if you want to go
+
+ahead and delete it, click on that and it's going to ask you to type in the repository name the way
+
+around that is, you can copy paste pasted in and then click on this.
+
+I understand consequences deletes this repository.
+
+Again, it's optional.
+
+It's up to you.
+
+Next, what we're going to do is delete Jenkins.

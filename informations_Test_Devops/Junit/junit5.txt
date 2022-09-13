@@ -1,0 +1,57 @@
+So what is going to be the first answer that comes to mind is that it is a testing framework that allows
+
+us to write unit tests in Java, which is true.
+
+Let's have a look at its architecture.
+
+G.
+
+Unit five is a combination of three things.
+
+It is a combination of G unit platform, Gene and Jupiter API and new unit vintage test engine.
+
+The first component of Gene five is such a unique platform.
+
+It is a core platform that serves as a foundation for lunch in testing frameworks on JVM, and it provides
+
+a testing gene for developing and running testing framework on the platform.
+
+Most popular Java development environments like NetBeans, Intel, AIG, Eclipse and built tools like
+
+Gradle even and and they all provide first class support for a unique platform.
+
+And we can use this tools today to run unit tests.
+
+All right.
+
+So think of it as a platform that runs two unit tests that you create.
+
+The second component is G unit Jupyter API, and it is a combination of a new programming model and
+
+extension model for writing tests and extensions in G Unit five.
+
+So Jupyter is a name of the API and Jupyter API is what we used to write Unity and Java.
+
+These are different notations and assertions that we use in our test methods.
+
+And then it also has an extension API that allows us to create our own version of Test API that we can
+
+use.
+
+Additionally to Jupiter, the third component is G unit vintage in G unit, meaning that is a test engine
+
+for running all the unit test.
+
+And before grade five there were junior three and four.
+
+So G Unit Vintage provides us with a test engine to run DNA test methods written with older version
+
+of G unit API.
+
+Because of G unit vintage, we can have a project that contains unit tests written with all the G Unit
+
+API and G unit members returned with a newer API version called Jupiter.
+
+Right?
+
+So together these three components make up G these five that we will use in this video, of course.

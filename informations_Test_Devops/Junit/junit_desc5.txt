@@ -1,0 +1,123 @@
+Now that we have created a new Gradle based project.
+
+We can configure it to use the needed unit to find dependencies.
+
+To do that, we will need to open build to create file, which is currently already opened in my development
+
+environment.
+
+And here under the Dependencies section, we have two dependencies already added by default.
+
+Now if you're working with an existing project, then you might not have this dependencies or they might
+
+be of a different version.
+
+So you might want to make sure that these dependencies are key.
+
+You need to find dependencies and maybe empty their version.
+
+So for the test implementation property we need to use, you need five Jupyter API dependency.
+
+And if you have a different dependency here or you need to look up a newer version, then you can do
+
+so by opening a new browser window and go into maven repository dot com.
+
+Using Search bar at the top.
+
+Search for G Unit Jupiter.
+
+And click on the search button.
+
+And here we have a list of who you need to be, the dependencies.
+
+Now, if I go back to my project, the first dependency that I have here is key unit Jupyter API dependency.
+
+It's currently version 5.8.1.
+
+So if I want to obtain this version, I will go here and will look for key unit Jupyter API.
+
+We'll click on it and then we'll click on the new version that I want to use.
+
+For example, 5.8.2.
+
+If I click on it, then here we have a panel with different types.
+
+The first one is Me, Tom, and it has to copy Maven version of this dependency.
+
+The second one is agreed on top, which we can already use, and the third one is agreed assured, which
+
+is the format that is currently being used in our built gradle file.
+
+So I will copy these shorter version of this dependency and I will go back to my project and will replace
+
+an existing one with a new one I have just copied.
+
+And similarly, we can update the version of the other dependency, which is a G unit, Jupiter engine,
+
+because we already have this dependency here.
+
+I can simply update its version.
+
+I will change it from 5.8. 1 to 5 .8.2, and we cannot more dependencies if needed.
+
+For example, let's go back to our even the repository dotcom and search for G unit Jupiter.
+
+If our project needs to support parameterized Gini tests, for example, then we will need to add another
+
+dependency to our project which is called G.
+
+You need to be there params.
+
+So I will click on it and then I will click on the latest version, will select Gradle at the top and
+
+will copy this dependency to my project.
+
+Like this.
+
+All right.
+
+So as you learn more about G-Unit and as you learn more about this than you ever could with other laborers,
+
+you can use this build to gradle file to add the needed dependencies here one by one.
+
+But when it comes to G unit, then instead of fighting these three dependencies separately, you can
+
+also add a single dependency instead.
+
+It is an aggregate dependency and it contains all these three dependencies in one.
+
+So to find them dependency, I will go back to me when they point to dot com.
+
+I will go back a couple of pages in history and the aggregate dependency that I'm looking for is called
+
+G unit Jupiter aggregator.
+
+That is dependency number three in this list.
+
+So I will click on it and then I will copy its latest version.
+
+I will select Greenall short panel and then I will copied this dependency to my project.
+
+And instead of these three, I can add only one aggregator dependency.
+
+All right.
+
+And optionally, to enable the standard out and standard error streams, you can add the following property
+
+to the test section.
+
+So right under the use g unit platform, we can add test, log in and then show standard streams.
+
+And then assign it a boolean value.
+
+True.
+
+Now because we have changed this built gradle file to making this changes, take a think.
+
+I'll click on this button in the top right corner, which will load changes into anthology to make it
+
+work correctly.
+
+All right, so let's continue.
+
+And in the following lesson, we can try running a very simple unit test and see if it works.

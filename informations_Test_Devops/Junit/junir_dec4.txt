@@ -1,0 +1,75 @@
+In the following lessons, you will learn how to set them to unit in Gradle based project.
+
+If you do not use Gradle, then feel free to skip these lessons until you need them in the future.
+
+Because in the following lessons, I will also show you how to set up a unit in your project without
+
+using Maven or Gradle.
+
+All right, so in this lesson, I'll create a new Gradle based project using intelligent development
+
+environment to create a new project.
+
+I will click on this new project button that is in the top right corner.
+
+And then from the left side panel, I will select Gradle, will select Java, and then click on Next
+
+Button.
+
+I will need to give my project a lean.
+
+This time I will call it Calculator and Gradle Project.
+
+And if needed, you can change location for this project by clicking on this folder button.
+
+I will delete the location as is and will expand artifact coordinates by clicking on it.
+
+Here we will need to fill in artifact coordinates that will uniquely identify our project.
+
+And the first one is group I.D..
+
+Group I.D. is usually a reverse domain name of your company or of your project.
+
+For example, I have project that is called obstacle per block dot com.
+
+So a river is the main name for this project will be IBM's developer block.
+
+Because this domain belongs to me.
+
+I know that this project will not conflict with other projects.
+
+All right, so then we'll need to provide artifact I.D., which is usually name of the current project.
+
+And that will keep it, as he's called, Co-leader, Green or Project.
+
+And a version of this project I will also leave as is.
+
+I will then click on the finish button to create this project.
+
+We will need to give it a few seconds to finish its setup.
+
+And now one set up is complete.
+
+We have a new project in the source folder.
+
+We have main Java folder for application, Java code and below on the same level with main folder,
+
+we have test folder and in this test folder we have Java folder where we're going to create test classes.
+
+And then we have built Gradle file which is currently opened and we will use this file to manage dependencies.
+
+We do not really have to.
+
+You need to find dependencies which are key.
+
+You need to Peter API and change up their engine.
+
+But in the following lesson we will add a different dependency which is going to be an aggregate of
+
+this tool.
+
+Unit Testing & Integration Testing of Java and Spring Boot applications.
+Note : 4,8 sur 1
+4,8
+26 notes
+273

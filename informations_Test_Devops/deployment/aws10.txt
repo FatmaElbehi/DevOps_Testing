@@ -1,0 +1,120 @@
+Et ce sujet, je veux vous faire découvrir des projets de déploiement, des déclencheurs, si vous vous en souvenez, dans notre
+
+plan, que nous utilisons pour construire et compiler le code source.
+
+Nous avons ajouté quelques déclencheurs dans l'onglet déclencheur de la configuration prévue, et si vous vous souvenez de certains déclencheurs,
+
+nous construisons juste le code source une fois par jour.
+
+L'un des déclencheurs que nous avions était de créer le code source à chaque fois que quelqu'un apportait une modification à la source
+
+code au système de contrôle de source.
+
+Et nous pouvons avoir des déclencheurs similaires pour le projet de déploiement car si nous allons à notre projet de déploiement
+
+et nous éditons le projet.
+
+Ici, nous avons quelques options, nous pouvons faire des choses supplémentaires avec le projet de déploiement, et l'une d'entre elles
+
+ajoute des déclencheurs.
+
+Donc si vous cliquez sur le bouton déclencheurs, on va sur une page où l'on peut ajouter des déclencheurs et ajouter un déclencheur,
+
+nous cliquons joyeusement sur ajouter un bouton de déclenchement.
+
+Et ici, vous avez trois options.
+
+Le premier est après un plan de construction réussi.
+
+Cela signifie que le plan de build associé doit se terminer avec succès avant que le déploiement puisse commencer.
+
+Cela signifie que si votre plan de construction est composé d'une ou deux ou plus de deux étapes, toutes les étapes ont
+
+se terminer avec succès et votre déploiement sera autorisé à se produire.
+
+Vous avez également une étape après succès, ce qui signifie que si votre plan comporte plus d'une étape, vous ne
+
+attendre que toutes les étapes soient terminées avec succès.
+
+Vous avez probablement dans ce scénario une étape principale et vous souhaitez déployer, même si l'une des autres
+
+les scènes vous manquent, vous vous inquiétez juste et vous êtes préoccupé par votre scène principale.
+
+Et grâce à cela, vous pouvez simplement déployer une fois votre étape principale terminée avec succès.
+
+Et vous pouvez également planifier le déploiement, par exemple, vous pouvez avoir un déploiement hebdomadaire.
+
+Donc d'abord, nous choisissons après un plan de construction réussi si nous cliquons sur la base.
+
+Il ajoute le déclencheur et ici vous pouvez, par exemple, dire après
+
+quelque chose comme ça, puis vous pouvez déployer une fois votre branche principale de plan, qui est connectée à l'énorme
+
+branche dans le système de contrôle de source, est terminée.
+
+Ou vous pouvez utiliser une branche de plan personnalisée et dans la liste déroulante, choisissez une branche de plan différente.
+
+Cela ne sera disponible que si vous avez un plan créatif de branches, nous pouvons donc dire déployer à chaque fois que le
+
+le plan est terminé.
+
+Si nous cliquons à nouveau sur notre déclencheur et choisissons cette fois après une étape réussie, c'est similaire.
+
+On peut donc dire un succès de scène, mais vous avez un accès plus granulaire.
+
+Ainsi, au lieu d'attendre que l'ensemble du plan soit terminé, vous pouvez choisir quelle étape est l'étape principale.
+
+Ainsi, par exemple, dans notre plan comptable, nous avons une étape par défaut qui compile et construit en fait
+
+le code source et exécute également les tests unitaires.
+
+Nous avons également créé un autre plan pour exécuter l'inspection du code.
+
+Donc, dans ce scénario, nous voulons dire qu'en fait, l'inspection du code n'est pas un gros problème.
+
+Comme si le style de code n'était pas vraiment parfait, nous ne nous en soucions pas vraiment.
+
+Nous ne nous soucions que de la compilation du code source et de la réussite de tous les tests unitaires.
+
+Donc, si c'est le cas, vous pouvez à nouveau choisir l'étape par défaut.
+
+Vous avez la possibilité d'utiliser la branche du plan directeur ou une autre branche du plan.
+
+Et puis vous avez dit votre déclencheur, évidemment, si vous ajoutez un déclencheur de plan Sandbranch puis un déclencheur d'étape
+
+sur le même plan, depen trigger ne va pas être très efficace car une de ces étapes est incluse
+
+dans le plan déclencheur de toute façon.
+
+Donc, avant même d'avoir atteint ce pays, votre niveau de déclenchement se déclenchera de toute façon.
+
+Et aussi, comme je l'ai déjà dit, vous pouvez planifier le déploiement.
+
+Vous pouvez simplement lui donner un nom et cliquer sur cette icône en forme de crayon, puis décider de l'horaire que vous souhaitez
+
+à utiliser pour votre déploiement.
+
+Par exemple, nous pouvons dire que nous voulons déployer quotidiennement une fois par jour, par exemple, un matin ou vous voulez
+
+disons, je veux déployer tous les vendredis, par exemple, à 16h00.
+
+En faisant cela, vous aurez des déploiements planifiés de calendrier de déploiement qui ne sont pas utiles et pas vraiment
+
+adapté à l'environnement de production car vous souhaitez que les déploiements dans votre production soient un peu
+
+plus contrôlé et plus discipliné.
+
+C'est bon pour votre environnement Kuai et peut-être votre environnement de transfert, car vous voulez garder
+
+votre environnement Q8 frais.
+
+Vous voulez que la dernière version de toute la sauce aille à votre akua afin que votre environnement Kuai ne
+
+prendre trop de retard sur la production.
+
+Cela peut être utile pour mettre à jour et déployer automatiquement le code dans vos environnements Kuai.
+
+C'est donc à peu près tout.
+
+Et allons voir ce que nous pouvons faire d'autre avec notre projet de déploiement.
+

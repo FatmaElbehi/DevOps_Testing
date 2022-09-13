@@ -1,0 +1,113 @@
+One of the main principles to follow when you need test animated is that we need to test this method
+
+in isolation from other dependencies.
+
+Let's have a look at a little diagram to understand what this means.
+
+Let's consider that we have a class with two methods and that we need to write unit tests for method
+
+E to test if this method works well and returns expected result.
+
+Our ideal scenario is that meant that E has a single responsibility and that this method is isolated
+
+from any other external classes.
+
+If it is isolated from external dependencies, then our unit test can easily create an instance of this
+
+cause and call its method to verify if it returns the expected result.
+
+But very often it's not the case.
+
+Often Method A creates an instance of another object, and to do its work method A needs to call one
+
+or two methods that belong to another object.
+
+And this complicates our testing very much, because if a failure takes place in the method that is
+
+in a different object, the unit test will also fail.
+
+And since our unit was test method E from Object A, we might mistakenly conclude that it is method
+
+E from object that is misbehaving while the actual error is taking place in a different method, in
+
+a different culture.
+
+So to avoid situations like this, we need to isolate the code we're testing.
+
+We create unit test to test business logic inside of method eight only.
+
+And since we're only interested in testing called the Method E, we need to find ways to isolate method
+
+E from other dependencies and tested in isolation from code in object B.
+
+Let's see how we can do it.
+
+To make our code better testable, we need to use dependency injection.
+
+Let's say we have an object e that depends on code into other objects b and C currently object e creates
+
+a new instance of class B and C in one of its methods.
+
+So instead of having Object E creating a new instance of Class B and C, we will need to lead this relationship
+
+around and inject into object e a ready to use object B and object C and this is called dependency injection.
+
+When dependencies are injected this way to isolate code in object A from code and object B and C, we
+
+can write unit test that injects into object A have fake or mock implementation of code in object B
+
+and C.
+
+This way we can test code in object in isolation, and this way we prevent situations when a back and
+
+code in object B fails, code in object E injecting mock implementation instead of real dependency helps
+
+us isolate code that we need to test and tested with different kinds of input values.
+
+If we need to test their method with a range of different input parameters, valid and invalid, we
+
+can create the unit test that works with mock implementations of those object or even simple stops that
+
+do not really do any business logic.
+
+You will learn how to create more computes and how to create stamps in the following video lessons.
+
+But for now, it's very important to understand that when our code under test has dependencies on other
+
+objects, we need to use dependency injection and inject mock implementations of the subjects so that
+
+we can test our code in isolation from those dependencies.
+
+Let's have a look at little code example.
+
+I have a method that is called process user sign up inside of this method.
+
+I create a new instance of sign up with service cost.
+
+So instead of our method creating a new instance of sign up service, we will make this method, accept
+
+this object as a method argument.
+
+Or we can use other dependency injection strategies and inject this dependency using constructor.
+
+We use dependency injection or field dependency injection.
+
+So when we need to write a unit and that test the behavior of a method, we need to isolate this method
+
+from other dependencies.
+
+These dependencies are injected into our methods as stamps or more complex with predefined behavior.
+
+We are not interested contestant this dependencies.
+
+We are only interested in testing code in the method under the test isolated from all other dependencies.
+
+This way.
+
+Or a unit test.
+
+That is test.
+
+And this particular method is more reliable and you will see how it all works in practice in following
+
+video lessons.

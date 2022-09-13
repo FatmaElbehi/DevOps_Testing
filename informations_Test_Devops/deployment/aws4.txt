@@ -1,0 +1,129 @@
+Il est maintenant temps de créer notre configuration de déploiement de code sur laquelle nous cliquons appelé deploy.
+
+Rien n'est ici, alors nous cliquons sur Commencer.
+
+Maintenant, nous n'avons pas besoin de l'exemple de déploiement pour cliquer sur le déploiement personnalisé, puis nous sautons la procédure.
+
+Chaque projet de déploiement d'appel a un nom d'application.
+
+Et comme je l'ai dit, parce que nous voulons faire de la conception par contrat ce genre de chose par contrat, nous utilisons l'application
+
+nom comme comptabilité partout.
+
+Nous ne le modifions pas et nous déployons sur un support facile à installer.
+
+Et ainsi, la plate-forme de calcul est facile à déployer.
+
+Le nom du groupe est similaire à notre environnement dans BAMBOO'S.
+
+Donc, si vous vous souvenez à Bambu, dans le cadre du projet de déploiement comptable, nous avons un déploiement d'environnement Kuai
+
+Le groupe dans appelé Deploy est similaire aux environnements.
+
+Donc, parce que nous utilisons Q8 à Bambu, nous utilisons Kuai ici.
+
+Vous pouvez avoir deux types de déploiement ici.
+
+Soit vous pouvez effectuer un déploiement sur place, soit vous pouvez effectuer un déploiement bleu-vert dans un déploiement sur place.
+
+Tous vos serveurs Servia seront en service lors du déploiement du code va déployer le produit et l'artefact
+
+sur eux.
+
+Dans le déploiement BlueGreen, vous pouvez déployer si vous avez plus d'un code serveur, le déploiement va
+
+enlevez l'un des serveurs, comme le mettre hors service, déployez tout dessus, puis il va
+
+le remettre en service puis il passe à la machine suivante et fait la même chose parce que nous ne faisons que
+
+avoir une machine en place.
+
+Le déploiement est parfait.
+
+Et il existe différentes manières de regrouper le service.
+
+L'un d'eux est le groupe de mise à l'échelle automatique.
+
+Donc, si vous en avez un ou deux, un groupe de mise à l'échelle et un certain nombre d'instances, vous pouvez le récupérer ou
+
+à un groupe de mise à l'échelle à partir de cette liste déroulante.
+
+L'avantage est que non seulement Amazon deploy sera en mesure de trouver toutes les deux instances dans cette auto
+
+groupe de mise à l'échelle et les mettre à jour.
+
+Mais aussi, si le groupe de mise à l'échelle automatique se développe plus tard, go deploy installera automatiquement la dernière révision
+
+que vous avez déjà sur les machines sur les machines nouvellement créées également.
+
+C'est donc l'avantage de l'installation sur un groupe squelette automatique.
+
+Nous n'avons pas de groupe de mise à l'échelle automatique.
+
+Maintenant, la machine que nous avons créée n'est pas dans un groupe de mise à l'échelle automatique.
+
+Nous allons donc sur Amazon, les instances EC2 dans Amazon, les instances Etsy.
+
+Vous devez avoir tagué vos serveurs, ce que nous avons fait.
+
+La balise que nous voulons est en place et la valeur est comptable.
+
+Et il y a deux instances ici car j'en ai créé une auparavant et elle est terminée.
+
+Comme vous le voyez ici.
+
+Celui que nous venons de créer est ici en cours d'exécution.
+
+C'est celui que nous avons créé.
+
+Celui qui est terminé est pour mon autre cours.
+
+C'est pour Team City et Team City.
+
+J'utilise le même nom, la même comptabilité de projet.
+
+C'est pourquoi nous avons cette machine à dette est ici.
+
+Celui que nous venons de créer est ici.
+
+C'est la course.
+
+Et vous n'avez pas à vous soucier de cela pour citer, le déploiement est suffisamment intelligent pour ne rien déployer sur
+
+la machine terminée.
+
+Vous pouvez également déployer sur des équilibreurs de charge.
+
+Donc, si vous cliquez sur activer l'équilibrage de charge et que vous cliquez ensuite, vous choisissez un équilibreur de charge à partir d'ici.
+
+Le déploiement va voir quelles machines sont attachées à cet équilibreur de charge et y déployer l'artefact
+
+et la configuration suivante est la configuration de déploiement.
+
+Vous pouvez mettre à jour toutes les machines d'un groupe de mise à l'échelle automatique ou toutes les machines qui ont une balise donnée
+
+à la fois.
+
+Ou vous pouvez mettre à jour la moitié d'entre eux d'abord, puis l'autre moitié.
+
+Ou vous pouvez mettre à jour un par un car nous n'avons qu'une seule machine.
+
+L'un ou l'autre fonctionnera pour nous et vous aurez alors besoin d'un rôle de service.
+
+Et ce rôle de service va donner un appel, déployer l'accès à vos instances, puis nous cliquons
+
+lors de la création de l'application.
+
+Alors maintenant que notre application est créée et que l'environnement est prêt, vous pouvez créer des déclencheurs et des alarmes
+
+également.
+
+Mais parce que je ne veux pas tourner ce sujet vers et que je pourrais déployer un tutoriel, je vous laisse juste le soin
+
+pour apprendre à ce sujet.
+
+Et nous avons terminé avec la configuration déployée.
+
+Après cela, je vais vous montrer comment installer l'agent et nous aurons terminé.
+
+Nous pouvons retourner à Bambu et déployer notre projet.

@@ -1,0 +1,134 @@
+In this lesson, we will improve our unit test method and we will make it actually test the integer
+
+division method that we have in our calculator class.
+
+And this one to do that, I will go back to my calculator test and I will delete the fill assertion
+
+and I will first create an instance of calculator class, an instance of class, the method in which
+
+I am testing.
+
+Now I can use this calculator object to call the integer division method.
+
+As dividend, I will use value of four, for example, and as a divisor I will use two.
+
+And this means that four will be divided by two.
+
+And the result of this operation I will assign to a local variable, let's call it a result.
+
+For example, now four divided by two is equal to two.
+
+So I expect the result of this operation to be equal to two.
+
+Let's verify if it's true.
+
+To do it, I can use a special insertion that checks if the two values are equal, for example, assert
+
+equals, and the very first parameter that assert equals assertion accept is the expected value.
+
+So four divided by two should be equal to two.
+
+So the expected result is two, and the next parameter that assert equal assertion accepts is the actual
+
+value that will be returned from the integer division method.
+
+We have assigned this value to a viable result so I can use it.
+
+Like this.
+
+So if the result is not going to be equal to two, this assertion will fail and the unit test will also
+
+fail.
+
+If the two values are both equal to two, then this assertion will get successful and unit test will
+
+pass.
+
+Let's try.
+
+I will run this unit test.
+
+And we have a passing unit test in the test report.
+
+I have a calculator test class with a green checkmark and I have in the gene division test method with
+
+a green checkmark as well.
+
+Now I can try and intentionally break business logic inside of integer division method just to see how
+
+it works.
+
+So instead of division, I will use multiplication, for example.
+
+I will save this business logic.
+
+I will go to my integer division test method and we'll run it one more time.
+
+And we have a failing unit test.
+
+The unit test result is telling as that assertion has failed.
+
+The expected value is two, but the actual value returned is eight.
+
+All right, so let's fix it.
+
+I will go to my integer division method, fix my code, save it and run my unit test one more time.
+
+And we have a passing unit test.
+
+And this is it, actually.
+
+This is how simple it is to write a unit test meant it.
+
+Now the business logic inside of the method that we are testing inside of this integer division method,
+
+it could be very complex, but that does not matter to us.
+
+We should not be afraid of the business logic inside of the method that we are testing seems to be very
+
+complex.
+
+The method under test can have many lines of code.
+
+It can have a very complex business logic containing encryption and decryption algorithms.
+
+But that does not matter much when we are writing a unit test method.
+
+Even though the business logic inside of method under test can be very, very complex, our unit tests
+
+can be very small.
+
+So as a person who writes unit has made it, all you need to do is to verify that for a given input
+
+parameters, the method under test returns expected result and that's it.
+
+You do not really need to understand all the details of that complex business logic you are testing
+
+or be able to write it yourself.
+
+You just need to verify that for a given input parameters, it returns an expected result.
+
+Personally, when I have realized this very important detail, my level of confidence has doubled.
+
+I became very confident that I can write unit tests for any project, and it does not matter much how
+
+complex that business logic is.
+
+And I hope it also gives you some confidence that writing unit tests is not very difficult, but there
+
+is more to learn.
+
+Of course there are other use cases that we need to consider.
+
+You need testing is not difficult, but you do need to learn more about it and there are other details
+
+as well.
+
+So let's continue and let's learn more about TE Unit API and how it works.
+
+Unit Testing & Integration Testing of Java and Spring Boot applications.
+Note : 4,8 sur 1
+4,8
+26 notes
+273
+Participants

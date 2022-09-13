@@ -1,0 +1,147 @@
+In this video, some will add to Unit five dependencies to our project and to find you you need five
+
+dependencies.
+
+I will bring a new browser window and I will go to maven repository dot com.
+
+Maven repository dot com and hit enter.
+
+Using the search bar at the top, I will search for Jupiter.
+
+And click on the search button.
+
+And here's a list of two unified dependencies for us to be able to use a G unit for Jupyter.
+
+We can either add a few dependencies one by one, or we can add a single dependency that aggregates
+
+multiple dependencies in one.
+
+For example, to add dependencies one by one, I will need to add Jupyter API, which is the very first
+
+dependency in the list.
+
+I will click on it and then I will click maybe on the latest version.
+
+And under me and top here.
+
+We have made one grade though and others.
+
+So under me one top I will copy the SML snippet and will paste it into my development environment right
+
+before the project element ends.
+
+I will create a new dependencies element and inside of this dependencies element, I will paste the
+
+new dependency.
+
+All right, now let's go back to our browser window and let's go back a couple of pages.
+
+The second dependency that I will need to add is called to Unit Jupiter Engine.
+
+And this is a number two dependency to Unit Jupiter Engine.
+
+This dependency contains the implementation of unit test engine and it allows us to arrange unit tests.
+
+So I will click on it and I will click on the latest version.
+
+Copy its SML code snippet from the Maven top and will also paste it into my pull Maximo file right under
+
+the unit Jupiter API dependency.
+
+Like this.
+
+All right, now let's go back and again.
+
+I will go back a couple of pages in history and optionally I might want to add to unit Jupiter param
+
+dependency for example to support parameterized unit test.
+
+And this dependency is a number for g unit Jupiter params.
+
+So I will click on it.
+
+Copy its example code snippet.
+
+And pasted into my form and small file like this.
+
+All right, so to make a project, have the need that you need five libraries, you can add these dependencies
+
+one by one, or there is also one single aggregate dependency that contains all these three dependencies.
+
+So if you want to use a single larger dependency, then you can delete this three.
+
+I will delete these three dependency and I will go back into my browser window and go back a couple
+
+of pages.
+
+And I'm looking for a dependency that is called G unit due to aggregator and this dependency is a number
+
+three.
+
+So if I click on it and then click on the latest version, I can copy its example code snippet from
+
+the Me Maven top.
+
+Now I will go back to my project and will paste this dependency inside of the dependencies element.
+
+All right, so this dependency will contain support for it too.
+
+You need five API Ford, you need five engine and also support for parameterized tests.
+
+And now that I have found it by dependency, I'll need Maven to reload polling sigma so that it can
+
+download these libraries and add them to my project.
+
+And to do that, I can you going to click on this button in the top right corner.
+
+It will load me when changes or I can select my project and then do right mouse click on it and then
+
+choose Maven and then click on Reload Project.
+
+And then if you expand external libraries, you will see the new you need five Jupyter libraries downloaded
+
+and added to your project.
+
+All right, so we have the need to climb Grace, and we should already be able to execute our unit tests
+
+using our development environment.
+
+Let's have a quick demo.
+
+I will create a new demo test and I will run it.
+
+And to create the new unit test, I will select the char folder under the test folder.
+
+I will do right mouse click on it and I will choose new Java class.
+
+I will give this class a the demo test and hit enter.
+
+It asks my permission to add this class to gate, I will click on ADD.
+
+And now that I have a class, I will add a little demo test method.
+
+In the following lectures, I will explain in details how to create test methods.
+
+But for now, I will skip the explanation and I will simply run this one just to demonstrate that we
+
+have successfully configured our G five support for this project.
+
+So to run this test, I will click on this green play button which will run the test.
+
+And I have green checkmarks in the test report and also next to the test method name, which means that
+
+our unit test was able to run and there are no issues.
+
+And this means that the unit libraries that we have had it do work.
+
+However, there is a one way useful plug in for automatically executing unit tests during the MAVEN
+
+build lifecycle.
+
+You will see this plug in used in manage our project.
+
+So let's continue.
+
+And in the following lecture we will add this plug in to our Upon Excel file and we will see how it
+
+works.

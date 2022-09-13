@@ -1,0 +1,197 @@
+In this video.
+
+Listen, I'll show you how to create a new interest in eclipse through open environment.
+
+If you do not use a crepes, then please feel free to skip this video lesson.
+
+All right, so I have eclipse development environment opened, and I will start by creating a new project.
+
+To do that, they will select file new and then I will select a simple Java project.
+
+From the list of wizards.
+
+I will select Java Project and will click on next.
+
+Now I will give my project a name.
+
+For example, calculator eclipse.
+
+And the rest of the options I will leave unchanged and they will click on Next Button.
+
+And finally we will click on Finish Button to create this project.
+
+Eclipse offers me to open Java perspective.
+
+This perspective was designed to support Java development.
+
+Oh, click on Open Perspective and now I have a very simple Java project opened.
+
+Let me expand to Project Folder and here I have source folder which is currently empty.
+
+Let's create a new general class.
+
+I will create a new class.
+
+I will put it into a package.
+
+For example, comm humps that will block.
+
+And then the name of the class will be calculator and the rest of the options are will also leave unchanged.
+
+I'll click on finish to screen this class.
+
+And I have a new class created in IBM's developer block package.
+
+Now I will add a method that I want to test, and it will be the same integer division method that I
+
+have created in one of the previous video lessons.
+
+Magnus Alright, so now that I have a method to test, I can create a unique test method for it.
+
+Now, because it is a brand new project, I do not even have a test folder for my test classes.
+
+So I will first create a test folder.
+
+To do that, I will select the project and then I will do right mouse click will select new and then
+
+choose source folder.
+
+I will call this folder test and will click on Finish Button to create this folder.
+
+Now I'm ready to create a new test class.
+
+To do it, I will select calculator from my IBM's developer block from the sources folder.
+
+I will do right mouse click on it, will select the new and then we'll select G unit test case.
+
+And the top.
+
+We have three different options that allow us to select the version of two units that we want to use.
+
+I will select the latest new do you need to beta test the source folder that comes right below?
+
+I want you to change it.
+
+Currently says I so c I will change it to test and this will please the new test class into the test
+
+folder that we have created.
+
+All right.
+
+So the package I will keep the scene and the name of the class will also stay the same.
+
+It is a common convention to use test at the end of the class name to specify that this class is a test
+
+class.
+
+The next panel, it allows me to generate one of this methods.
+
+I'm not going to do it at this moment.
+
+Then we'll skip it.
+
+We we'll talk about this method a little bit later and then we have class under test, which is calculator.
+
+This is correct.
+
+I'm not going to change it.
+
+All right.
+
+So now I can click on Finish Button to create this new test class.
+
+Now.
+
+Eclipse's letting me know that you need five is not on the growth path.
+
+Do I want to add it?
+
+And the answer is yes, I will need to add it.
+
+So I will keep the perform following action selected to add to Unit five library on the built path and
+
+will click on okay button.
+
+And here we go.
+
+Eclipse has created a new calculator quiz with an example of Test method, which currently doesn't test
+
+anything.
+
+If it wrong this method, it will fail because of this fail assertion.
+
+And one of the ways to run test methods in this class is to select the test class itself and then do
+
+right mouse click on it and then choose a run as and then select g unit test.
+
+It tells me that my calculator class is not saved and invites me to save changes to my calculator class
+
+whole week and the test all around now.
+
+All right.
+
+So it has failed on the left side.
+
+Here we have a unique panel active and the bar at the top is present.
+
+This means that the test has failed and it has failed because we have intentionally failed it with this
+
+fail assertion.
+
+All right.
+
+So let's make it pass.
+
+If you execute your unit test method and none of its assertions fail or it does not result in an exception
+
+thrown, then this g unit test will pass.
+
+It is a full g unit test behavior.
+
+If it does not fail, then it passes.
+
+All right, so to make it pass, I can simply comment out this fail assertion and let it print something
+
+instead.
+
+For example, we will add system out, print again and print the same message.
+
+And now I can run it again.
+
+I will switch to Package Explorer.
+
+It's safe changes first and then I will select my calculator.
+
+Test class will do right mouse click on it.
+
+Run as g unit test.
+
+And we have a passing unit test.
+
+The bar on the unit panel is green and this means that all is good and that unit has passed.
+
+If the bar is red, then this means that we have a failing test.
+
+But if the bar is green, then the test is successful.
+
+If I expand the calculator test, then here I have a single test method with a little checkmark in green
+
+indicating that this test method is passing.
+
+All right, so all this good and you now know how to create and how to run a very simple unit test method,
+
+use an eclipse development environment.
+
+Now, the unit test that is here, it doesn't really do anything.
+
+It doesn't really test anything.
+
+So let's continue.
+
+And in the following lessons, we will create a test method that will actually test our integer division
+
+method in the calculator class.
+
+But for the rest of the course I will use intelligent development environment.
+
+Unit Testing & Integration Testing of Java and Spring Boot applications.

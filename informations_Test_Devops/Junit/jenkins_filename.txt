@@ -1,0 +1,69 @@
+Hi and welcome back.
+
+A concept I'm going to cover is Jenkins files with different names now for us, because we've been creating
+
+folders to try and get around this by creating a file called Jenkins File.
+
+Now, there is a bit of a downside to this, which I'm going to show you now if I get back over to voice
+
+code.
+
+We see we have this Jenkins file here.
+
+Now, I can copy this, paste it and put the extension to one.
+
+And sometimes what you might see is if it's environment specific, you might see something like base,
+
+you might have Productos Jenkins file.
+
+And now we can see it's created a new file.
+
+Now, if we have a quick look at the difference between the two, we have Jenkins file like this.
+
+It's colourful.
+
+It looks nice.
+
+And then we have this one perfectly valid.
+
+It will still work.
+
+However, as we can see, it's not as colorful and it looks a bit plain.
+
+Unfortunately, at the time of writing this and even when I was a consultant, I can find a workaround
+
+for this.
+
+And my solution was really hacky.
+
+So it would normally see was every different environment or maybe every different application should
+
+have ap1 up to for Jenkins file.
+
+Some engineers I knew would work on it like this.
+
+And I don't know about you, but I'm so used to different colors getting used to to plug it in as well.
+
+But the curly braces, I couldn't do it.
+
+So all I used to do was rename the file and lock that out.
+
+Well, let me do it here because I've already got a file called Jenkins File.
+
+But that is how I would get around it.
+
+So you can again see it all in color so you can go ahead and delete this, because what we'll do next
+
+is I'll show you a demo and show you that this does work.
+
+And as you can see here, this is colourful.
+
+This is what we want.
+
+And let's say back in our example, we change it.
+
+And then once we're done, we'd go ahead and rename it sort of select product jenkins' file again.
+
+And that will go ahead and work.
+
+So next, let's have a demo of that working.
